@@ -1,5 +1,5 @@
 .resumeCreate {
-    height: 100vh;
+
 }
 
 .resumeCreate_Container {
@@ -8,6 +8,7 @@
 
 .resumeCreate_Body {
     margin: 2rem;
+    background-color: rgb(233, 194, 194);
 }
 
 .slick-slider {
