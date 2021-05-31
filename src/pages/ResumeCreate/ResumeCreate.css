@@ -1,0 +1,16 @@
+.resumeCreate {
+    height: 100vh;
+}
+
+.resumeCreate_Container {
+    padding: 3rem;
+}
+
+.resumeCreate_Body {
+    margin: 2rem;
+}
+
+.slick-slider {
+    height: 100% !important;
+}
+
