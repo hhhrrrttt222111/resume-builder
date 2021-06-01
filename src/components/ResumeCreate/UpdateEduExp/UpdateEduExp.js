@@ -17,7 +17,7 @@ function UpdateEduExp() {
 
     const onSubmit = (data) => {
         updateEducation(data)
-        console.log(resume.education)
+        // console.log(resume.education)
     };
 
 

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { ChooseTemplate, UpdateHeader, UpdateEduExp } from '../../components'
+import { ChooseTemplate, UpdateHeader, UpdateEduExp, SkillInterest, UpdateContact } from '../../components'
 import './ResumeCreate.css'
 import { Button } from '@material-ui/core';
 
@@ -56,6 +56,13 @@ function ResumeCreate() {
                             </div>
                             <div>
                                 <UpdateEduExp />
+                            </div>
+                            <div>
+                                <SkillInterest />
+                            </div>
+
+                            <div>
+                                <UpdateContact />
                             </div>
                         </Slider>
                     </div>
