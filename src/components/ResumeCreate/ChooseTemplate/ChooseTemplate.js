@@ -22,7 +22,7 @@ const templates = [
 
 
 function ChooseTemplate() {
-    const { updateTemplate, resume } = useContext(DetailsContext);
+    const { updateTemplate } = useContext(DetailsContext);
 
     const [tempId, setTempId] = useState(1)
 

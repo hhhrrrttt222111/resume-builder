@@ -39,9 +39,6 @@ function UpdateHeader() {
     }
 
 
-
-
-
     return (
         <div className="updateHeader">
             <h1>About You</h1>

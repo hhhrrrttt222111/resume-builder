@@ -1,31 +1,16 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import { useForm } from "react-hook-form";
 import { Button } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import './UpdateEduExp.css'
 import { DetailsContext } from '../../../contexts/DetailsContext'
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      width: '100%',
-    },
-    heading: {
-      fontSize: theme.typography.pxToRem(15),
-      fontWeight: theme.typography.fontWeightRegular,
-    },
-}));
-
-
 function UpdateEduExp() {
-
-    const classes = useStyles();
 
     const { resume, updateEducation } = useContext(DetailsContext);
     const { register, handleSubmit } = useForm();
