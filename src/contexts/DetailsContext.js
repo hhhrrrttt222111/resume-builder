@@ -9,8 +9,7 @@ function DetailsContextProvider(props) {
         image: '',
         header: {},
         education: {},
-        experience: {},
-        skills: [],
+        skill: [],
         interests: [],
         contact: {}
     })
@@ -31,9 +30,6 @@ function DetailsContextProvider(props) {
         setResume({ ...resume,  education: data})
     }
 
-    function updateExperience(data) {
-        setResume({ ...resume,  experience: data})
-    }
 
     function updateSkills(data) {
         setResume({ ...resume,  skills: data})
@@ -47,7 +43,7 @@ function DetailsContextProvider(props) {
         setResume({ ...resume,  contact: data})
     }
 
-    const value = { resume, updateHeader, updateEducation, updateExperience, updateSkills, updateInterests, updateContact, updateTemplate, updateImage }
+    const value = { resume, updateHeader, updateEducation, updateSkills, updateInterests, updateContact, updateTemplate, updateImage }
 
     return (
         <DetailsContext.Provider value={value}>
