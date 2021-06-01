@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { ChooseTemplate, UpdateHeader } from '../../components'
+import { ChooseTemplate, UpdateHeader, UpdateEduExp } from '../../components'
 import './ResumeCreate.css'
 import { Button } from '@material-ui/core';
 
@@ -15,7 +15,7 @@ function ResumeCreate() {
 
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 800,
         arrows: false,
         slidesToShow: 1,
@@ -53,6 +53,9 @@ function ResumeCreate() {
                             </div>
                             <div>
                                 <UpdateHeader />
+                            </div>
+                            <div>
+                                <UpdateEduExp />
                             </div>
                         </Slider>
                     </div>

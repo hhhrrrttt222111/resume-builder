@@ -1,29 +1,64 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext } from 'react'
 import { useForm } from "react-hook-form";
-import {useDropzone} from 'react-dropzone';
+import { Button } from '@material-ui/core';
 
 import './UpdateHeader.css'
 import { DetailsContext } from '../../../contexts/DetailsContext'
-import { Button } from '@material-ui/core';
+
+
 
 function UpdateHeader() {
 
-    const { updateHeader, resume } = useContext(DetailsContext);
+    const [image, setImage] = useState(null)
+
+
+    const { updateImage, updateHeader } = useContext(DetailsContext);
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-        updateHeader(data)
-        console.log(resume.header)
+        updateHeader(data)  
     };
+
+
+    const types = ['image/png', 'image/jpeg', 'image/jpg']
+
+    
+    const imageHandler = (e) => {
+        let selected = e.target.files[0]
+
+        if (selected && types.includes(selected.type)) {
+            let reader = new FileReader()
+            reader.onloadend = () => {
+                setImage(reader.result)
+                updateImage(reader.result)
+            }
+            reader.readAsDataURL(selected)
+        } else {
+            setImage(null)
+        }
+    }
+
+
+
 
 
     return (
         <div className="updateHeader">
             <h1>About You</h1>
             <div className="headerFormContainer">
-                <form noValidate autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
+                <form noValidate autoComplete="off" onSubmit={handleSubmit(onSubmit)} className="headerForm">
                     <div className="headerFormOne">
-                        <img src="" alt="" />
+                        <div className="headerFormOneLeft">
+                            <div style={{background: image? `url("${image}") no-repeat center/cover`: 'url("https://networkprogramming.files.wordpress.com/2019/02/content.jpg") no-repeat center/cover'}} className="image-upload">
+                                <input 
+                                    type="file" 
+                                    onChange={imageHandler} 
+                                    name="image"
+                                    id="fileUpload"
+                                />
+                                <label htmlFor="fileUpload" className="customFileUpload"></label>
+                            </div>
+                        </div>
                         <div className="headerFormOneRight">
                             <input 
                                 type="text" 
@@ -31,6 +66,7 @@ function UpdateHeader() {
                                 {...register("name")} 
                                 name="name"
                                 onChange={handleSubmit(onSubmit)}
+                                className="input_name"
                             />
                             <input 
                                 type="text" 
@@ -38,7 +74,9 @@ function UpdateHeader() {
                                 {...register("title")} 
                                 name="title"
                                 onChange={handleSubmit(onSubmit)}
+                                className="input_title"
                             />
+
                         </div>
                     </div>
                     <div className="headerFormTwo">
@@ -47,8 +85,8 @@ function UpdateHeader() {
                             placeholder="Bio" 
                             {...register("bio")} 
                             name="bio"
-                            style={{maxHeight: '5rem'}}
                             onChange={handleSubmit(onSubmit)}
+                            className="input_bio"
                         />
                     </div>
 

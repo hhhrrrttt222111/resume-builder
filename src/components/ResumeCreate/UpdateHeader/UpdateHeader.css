@@ -3,31 +3,123 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    overflow: hidden;
 }
 
 .updateHeader > h1 {
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 .headerFormContainer {
-    margin: 3rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.headerFormOne {
+    margin: 1rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    width: 70%;
+}
+
+.headerFormContainer > form {
+    width: 100%;
+}
+
+.headerFormOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.headerFormOneLeft {
+    margin: 2rem;
+}
+
+.image-upload {
+    height: 170px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.image-upload > input {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.image-upload > input[type="file"] {
+    display: none;
+}
+
+.customFileUpload {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
 }
 
 
 .headerFormOneRight {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+
+.input_name, .input_title {
+    background: pink;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    color: black;
+}
+
+
+
+.headerFormTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.input_bio {
+    background: pink;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    min-width: 100%;
+    min-height: 5rem;
+    height: 48px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: black;
+}
+
+.headerForm > button, .headerForm > button:hover {
+    float: right;
+    font-size: 18px;
+    margin-top: 2rem;
+    padding: 0.7rem 2.1rem;
+    text-transform: inherit;
+    color: red;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: black;
 }

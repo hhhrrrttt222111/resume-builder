@@ -6,9 +6,10 @@ function DetailsContextProvider(props) {
 
     const [resume, setResume] = useState({
         templateId: '1', 
+        image: '',
         header: {},
-        education: [],
-        experience: [],
+        education: {},
+        experience: {},
         skills: [],
         interests: [],
         contact: {}
@@ -16,6 +17,10 @@ function DetailsContextProvider(props) {
 
     function updateTemplate(data) {
         setResume({ ...resume,  templateId: data})
+    }
+
+    function updateImage(data) {
+        setResume({ ...resume,  image: data})
     }
 
     function updateHeader(data) {
@@ -42,7 +47,7 @@ function DetailsContextProvider(props) {
         setResume({ ...resume,  contact: data})
     }
 
-    const value = { resume, updateHeader, updateEducation, updateExperience, updateSkills, updateInterests, updateContact, updateTemplate }
+    const value = { resume, updateHeader, updateEducation, updateExperience, updateSkills, updateInterests, updateContact, updateTemplate, updateImage }
 
     return (
         <DetailsContext.Provider value={value}>
