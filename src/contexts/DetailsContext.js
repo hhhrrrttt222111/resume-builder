@@ -11,7 +11,8 @@ function DetailsContextProvider(props) {
         education: {},
         skill: [],
         interests: [],
-        contact: {}
+        contact: {},
+        theme: {}
     })
 
     function updateTemplate(data) {
@@ -43,7 +44,11 @@ function DetailsContextProvider(props) {
         setResume({ ...resume,  contact: data})
     }
 
-    const value = { resume, updateHeader, updateEducation, updateSkills, updateInterests, updateContact, updateTemplate, updateImage }
+    function updateTheme(data) {
+        setResume({ ...resume,  theme: data})
+    }
+
+    const value = { resume, updateHeader, updateEducation, updateSkills, updateInterests, updateContact, updateTemplate, updateImage, updateTheme }
 
     return (
         <DetailsContext.Provider value={value}>

@@ -3,13 +3,17 @@
 }
 
 .resumeCreate_Container {
-    padding: 2rem 6rem;
+    padding: 1rem 6rem;
     padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .resumeCreate_Body {
-    margin: 2rem auto;
-    background-color: rgb(233, 194, 194);
+    margin: 2rem;
+    background-color: rgb(211, 164, 164);
     width: 80%;
 }
 
@@ -30,4 +34,82 @@
     padding: 0;
     height: 75vh !important;
     overflow-y: scroll !important;
+}
+
+
+.resumeSlider_Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.resumeSlider_Buttons > button, .resumeSlider_Buttons > button:hover {
+    font-size: 18px;
+    text-transform: inherit;
+    color: whitesmoke;
+    border: 1px solid blueviolet;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: -0.6rem;
+    background-color: green;
+}
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .resumeCreate_Container {
+        padding: 2rem 3rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .resumeCreate {
+        height: 100%;
+    }
+    
+    .resumeCreate_Container {
+        padding: 2rem 0rem;
+    }
+    .resumeCreate_Body {
+        margin: 2rem;
+        background-color: rgb(233, 194, 194);
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .resumeCreate_Container {
+        padding: 2rem 0rem;
+    }
+    .resumeCreate_Body {
+        margin: 2rem;
+        background-color: rgb(233, 194, 194);
+        width: 100%;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resumeCreate_Body {
+        margin: 1rem;
+        background-color: rgb(233, 194, 194);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
 }

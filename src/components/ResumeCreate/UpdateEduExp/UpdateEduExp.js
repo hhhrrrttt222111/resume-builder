@@ -12,12 +12,11 @@ import { DetailsContext } from '../../../contexts/DetailsContext'
 
 function UpdateEduExp() {
 
-    const { resume, updateEducation } = useContext(DetailsContext);
+    const { updateEducation } = useContext(DetailsContext);
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
         updateEducation(data)
-        // console.log(resume.education)
     };
 
 
