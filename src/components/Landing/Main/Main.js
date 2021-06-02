@@ -11,6 +11,7 @@ function Main() {
   function handleClick() {
     history.push("/create");
   }
+  
     return (
         <div className="main">
             <h1>LOGO</h1>
@@ -21,7 +22,7 @@ function Main() {
                     <Button onClick={handleClick}>Get Started</Button>
                 </div>
                 <div className="img-container">
-                    <img src="https://images.unsplash.com/photo-1622557875141-e431587c0d28?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3MXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
+                    <img src="https://images.unsplash.com/photo-1622557875141-e431587c0d28?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3MXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt=""/>
                 </div>
             </div>  
                        
