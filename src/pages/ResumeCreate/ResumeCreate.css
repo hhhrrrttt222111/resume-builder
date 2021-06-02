@@ -1,9 +1,10 @@
 .resumeCreate {
-
+    height: 100vh;
 }
 
 .resumeCreate_Container {
-    padding: 3rem;
+    padding: 2rem 6rem;
+    padding-bottom: 0;
 }
 
 .resumeCreate_Body {
@@ -19,4 +20,14 @@
 
 .slick-initialized { 
     overflow: hidden; 
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 75vh !important;
+    overflow-y: scroll !important;
 }

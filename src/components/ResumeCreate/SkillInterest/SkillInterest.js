@@ -37,7 +37,7 @@ function SkillInterest() {
                                 <h4>Add Interests</h4>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <div >
+                                <div>
                                     <input 
                                         type="text" 
                                         {...register("interest1")} 
