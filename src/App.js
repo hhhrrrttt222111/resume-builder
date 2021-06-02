@@ -9,7 +9,7 @@ function App() {
 
   const { resume } = useContext(DetailsContext);
 
-  // console.log(resume)
+
 
   return (
     <div className="app">

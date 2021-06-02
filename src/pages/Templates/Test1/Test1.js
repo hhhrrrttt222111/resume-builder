@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Document, Page, Text, View, StyleSheet, Image, Font } from '@react-pdf/renderer';
-
 
 
 import openSans from '../../../assets/fonts/OpenSans-Light.ttf'
@@ -19,18 +18,18 @@ Font.register({ family: "'Courgette', cursive", src: Courgette });
 
 function Test1({ resume }) {
 
-    // console.log(resume)
+    console.log(resume)
     
     const styles = StyleSheet.create({
         page: {
           flexDirection: 'column',
-          backgroundColor: '#ccffff',
+          backgroundColor: resume.theme.primary,
         },
         header: {
           padding: '20px',
           display: 'flex',
           flexDirection: 'row',
-          backgroundColor: '#66ffff',
+          backgroundColor: resume.theme.secondary,
         },
         avatar : {
             width: '90px',
@@ -154,94 +153,176 @@ function Test1({ resume }) {
         <Document>
             <Page size="A4" style={styles.page} title="resume">
                 <View style={styles.header}>
-                    <Image src="https://avatars.githubusercontent.com/u/43471295?v=4" style={styles.avatar}/>
+                    {resume.image ? (
+                        <Image src={resume.image} style={styles.avatar}/>
+                    ) : (
+                        <Image src="https://avatars.githubusercontent.com/u/43471295?v=4" style={styles.avatar}/>
+                    )}
                     <View style={styles.headerRight}>
-                        <Text style={styles.name}>John Wick</Text>
-                        <Text style={styles.title}>Frontend Developer</Text>
+                        <Text style={styles.name}>{resume.header.name}</Text>
+                        <Text style={styles.title}>{resume.header.title}</Text>
                     </View>
                 </View>
             
                 <View style={styles.bio}>
                     <Text style={styles.bioText}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                        {resume.header.bio}
                     </Text>
                 </View>
                 
                 <View style={styles.educationContainer}>
                     <Text style={styles.eduHeading}>Education</Text>
 
-                    <View style={styles.education}>
-                        <Text style={styles.eduYear}>2007 - 2019</Text>
-                        <View style={styles.eduRight}>
-                            <Text style={styles.eduRightTitle}>Hogwarts School of Witchcraft and Wizardry</Text>
-                            <Text style={styles.eduRightCont}>Higher Secondary Education</Text>
+                    {resume.education.school1 ? (
+                        <View style={styles.education}>
+                            <Text style={styles.eduYear}>{resume.education.edyear1}</Text>
+                            <View style={styles.eduRight}>
+                                <Text style={styles.eduRightTitle}>{resume.education.school1}</Text>
+                                <Text style={styles.eduRightCont}>{resume.education.degree1}</Text>
+                            </View>
                         </View>
-                    </View>
-                    <View style={styles.education}>
-                        <Text style={styles.eduYear}>2007 - 2019</Text>
-                        <View style={styles.eduRight}>
-                            <Text style={styles.eduRightTitle}>Hogwarts School of Witchcraft and Wizardry</Text>
-                            <Text style={styles.eduRightCont}>Higher Secondary Education</Text>
+                    ) : <></>}
+
+                    {resume.education.school2 ? (
+                        <View style={styles.education}>
+                            <Text style={styles.eduYear}>{resume.education.edyear2}</Text>
+                            <View style={styles.eduRight}>
+                                <Text style={styles.eduRightTitle}>{resume.education.school2}</Text>
+                                <Text style={styles.eduRightCont}>{resume.education.degree2}</Text>
+                            </View>
                         </View>
-                    </View>
-                    <View style={styles.education}>
-                        <Text style={styles.eduYear}>2007 - 2019</Text>
-                        <View style={styles.eduRight}>
-                            <Text style={styles.eduRightTitle}>Hogwarts School of Witchcraft and Wizardry</Text>
-                            <Text style={styles.eduRightCont}>Higher Secondary Education</Text>
+                    ) : <></>}
+
+                    {resume.education.school3 ? (
+                        <View style={styles.education}>
+                            <Text style={styles.eduYear}>{resume.education.edyear3}</Text>
+                            <View style={styles.eduRight}>
+                                <Text style={styles.eduRightTitle}>{resume.education.school3}</Text>
+                                <Text style={styles.eduRightCont}>{resume.education.degree3}</Text>
+                            </View>
                         </View>
-                    </View>
+                    ) : <></>}
                 </View>
 
                 <View style={styles.educationContainer}>
-                    <Text style={styles.eduHeading}>Experience</Text>
+                    {resume.education.company1 ? (
+                        <Text style={styles.eduHeading}>Experience</Text>
+                    ) : (
+                        <></>
+                    )}
 
-                    <View style={styles.education}>
-                        <Text style={styles.eduYear}>2007 - 2019</Text>
-                        <View style={styles.eduRight}>
-                            <Text style={styles.eduRightTitle}>Google</Text>
-                            <Text style={styles.eduRightCont}>Front end developer</Text>
+                    {resume.education.company1 ? (
+                        <View style={styles.education}>
+                            <Text style={styles.eduYear}>{resume.education.exyear1}</Text>
+                            <View style={styles.eduRight}>
+                                <Text style={styles.eduRightTitle}>{resume.education.company1}</Text>
+                                <Text style={styles.eduRightCont}>{resume.education.job1}</Text>
+                            </View>
                         </View>
-                    </View>
+                    ) : (
+                        <></>
+                    )}
+
+                    
+                    {resume.education.company2 ? (
+                        <View style={styles.education}>
+                            <Text style={styles.eduYear}>{resume.education.exyear2}</Text>
+                            <View style={styles.eduRight}>
+                                <Text style={styles.eduRightTitle}>{resume.education.company2}</Text>
+                                <Text style={styles.eduRightCont}>{resume.education.job2}</Text>
+                            </View>
+                        </View>
+                    ) : (
+                        <></>
+                    )}
+
                 </View>
 
                 <View style={styles.skillInterest}>
                     <View style={styles.skillsCont}>
                         <Text style={styles.skillInterestHeading}>Skills</Text>
                         <View>
-                            <Text style={styles.skill}>HTML/CSS/JS</Text>
-                            <Text style={styles.skill}>React JS</Text>
-                            <Text style={styles.skill}>Django</Text>
-                            <Text style={styles.skill}>MERN Stack</Text>
-                            <Text style={styles.skill}>Photoshop</Text>
-                            <Text style={styles.skill}>Java</Text>
-                            <Text style={styles.skill}>Python</Text>
+                            {resume.skills.skill1 ? (
+                                <Text style={styles.skill}>{resume.skills.skill1}</Text>
+                            ) : (<></>)}
+
+                            {resume.skills.skill2 ? (
+                                <Text style={styles.skill}>{resume.skills.skill2}</Text>
+                            ) : (<></>)}
+
+                            {resume.skills.skill3 ? (
+                                <Text style={styles.skill}>{resume.skills.skill3}</Text>
+                            ) : (<></>)}
+
+                            {resume.skills.skill4 ? (
+                                <Text style={styles.skill}>{resume.skills.skill4}</Text>
+                            ) : (<></>)}
+
+                            {resume.skills.skill5 ? (
+                                <Text style={styles.skill}>{resume.skills.skill5}</Text>
+                            ) : (<></>)}
+                            
+                            {resume.skills.skill6 ? (
+                                <Text style={styles.skill}>{resume.skills.skill6}</Text>
+                            ) : (<></>)}
+
+                            {resume.skills.skill7 ? (
+                                <Text style={styles.skill}>{resume.skills.skill7}</Text>
+                            ) : (<></>)}
                         </View>
                     </View>
                     <View style={styles.interestsCont}>
                         <Text style={styles.skillInterestHeading}>Interests</Text>
                         <View>
-                            <Text style={styles.skill}>Reading</Text>
-                            <Text style={styles.skill}>Singing</Text>
-                            <Text style={styles.skill}>Blogging</Text>
-                            <Text style={styles.skill}>Movies</Text>
+                            {resume.interests.interest1 ? (
+                                <Text style={styles.skill}>{resume.interests.interest1}</Text>
+                            ) : (<></>)}
+                            {resume.interests.interest2 ? (
+                                <Text style={styles.skill}>{resume.interests.interest2}</Text>
+                            ) : (<></>)}
+                            {resume.interests.interest3 ? (
+                                <Text style={styles.skill}>{resume.interests.interest3}</Text>
+                            ) : (<></>)}
+                            {resume.interests.interest4 ? (
+                                <Text style={styles.skill}>{resume.interests.interest4}</Text>
+                            ) : (<></>)}
+                            {resume.interests.interest5 ? (
+                                <Text style={styles.skill}>{resume.interests.interest5}</Text>
+                            ) : (<></>)}
                         </View>
                     </View>
                 </View>
 
                 <View style={styles.contact}>
                     <View style={styles.details}>
-                        <Text style={styles.contactItem}>1234567890</Text>
-                        <Text style={styles.contactItem}>test.human@gmail.com</Text>
-                        <Text style={styles.contactItem}>https://thisismywebsite.com</Text>
+                        {resume.contact.phone ? (
+                            <Text style={styles.contactItem}>{resume.contact.phone}</Text>
+                        ) : (
+                            <></>
+                        )}
+
+                        {resume.contact.email ? (
+                            <Text style={styles.contactItem}>{resume.contact.email}</Text>
+                        ) : (
+                            <></>
+                        )}
+
+
+
+                        {resume.contact.website ? (
+                        <Text style={styles.contactItem}>{resume.contact.website}</Text>
+                        ) : (
+                            <></>
+                        )}
+
+
                     </View>
-                    <View style={styles.address}>
-                        <Text style={styles.contactItem}>
-                            221 Baker Street, Mountain View, 
-                            California, United States, 741289
-                        </Text>
+                    <View style={styles.address}>                        
+                        {resume.contact.address ? (
+                        <Text style={styles.contactItem}>{resume.contact.address}</Text>
+                        ) : (
+                            <></>
+                        )}
                     </View>
                 </View>
             </Page>

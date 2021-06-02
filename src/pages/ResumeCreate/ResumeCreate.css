@@ -53,8 +53,17 @@
     border-radius: 12px;
     margin-top: -0.6rem;
     background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+.generate_pdf {
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
+    margin-bottom: -0.2rem;
+}
 
 @media (min-width: 992px) and (max-width: 1380px) {
     .resumeCreate_Container {

@@ -1,15 +1,24 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useContext } from 'react'
+import { Button } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { IoDocumentOutline } from "react-icons/io5";
+
+import { DetailsContext } from '../../contexts/DetailsContext'
 import { ChooseTemplate, UpdateHeader, UpdateEduExp, SkillInterest, UpdateContact, ChooseTheme } from '../../components'
 import './ResumeCreate.css'
-import { Button } from '@material-ui/core';
+
 
 function ResumeCreate() {
 
+    const { resume } = useContext(DetailsContext);
+    const template = resume.templateId
     const sliderRef = useRef();
+    const history = useHistory();
+
 
     const [slide, setSlide] = useState(1)
 
@@ -28,7 +37,6 @@ function ResumeCreate() {
     };
 
     
-
     const gotoNext = () => {
         sliderRef.current.slickNext();
         setSlide(slide + 1)
@@ -38,6 +46,13 @@ function ResumeCreate() {
         sliderRef.current.slickPrev();
         setSlide(slide - 1)
     }
+
+
+    const generatePDF = () => {
+        history.push(`/template/${template}`)
+    }
+
+    console.log(resume)
 
     return (
         <div className="resumeCreate">
@@ -75,6 +90,12 @@ function ResumeCreate() {
                     </Button>
                     <Button onClick={gotoNext} style={{display: slide === 6 ? 'none' : 'inline-block'}}>
                         Next
+                    </Button>
+
+
+                    <Button onClick={generatePDF} style={{display: slide === 6 ? 'inline-block' : 'none'}}>
+                        Genarate
+                        <IoDocumentOutline className="generate_pdf"/>
                     </Button>
                 </div>
             </div>
