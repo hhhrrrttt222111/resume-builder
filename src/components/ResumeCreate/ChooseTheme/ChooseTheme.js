@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { Button } from '@material-ui/core';
 import { SketchPicker } from 'react-color';
 
 import './ChooseTheme.css'
@@ -22,7 +21,7 @@ function ChooseTheme() {
         };
 
         onSubmit()
-
+    // eslint-disable-next-line
     }, [primary, secondary])
 
     return (

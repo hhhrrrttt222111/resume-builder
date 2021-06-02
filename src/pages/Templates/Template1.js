@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Document, Page, Text, View, StyleSheet, Image, Font } from '@react-pdf/renderer';
 
 
-import openSans from '../../../assets/fonts/OpenSans-Light.ttf'
-import Alegreya from '../../../assets/fonts/AlegreyaSansSC-Bold.ttf'
-import ubuntu from '../../../assets/fonts/UbuntuMono-Italic.ttf'
-import nunito from '../../../assets/fonts/Nunito-Light.ttf'
-import Courgette from '../../../assets/fonts/Courgette-Regular.ttf'
+import openSans from '../../assets/fonts/OpenSans-Light.ttf'
+import Alegreya from '../../assets/fonts/AlegreyaSansSC-Bold.ttf'
+import ubuntu from '../../assets/fonts/UbuntuMono-Italic.ttf'
+import nunito from '../../assets/fonts/Nunito-Light.ttf'
+import Courgette from '../../assets/fonts/Courgette-Regular.ttf'
 
 // Create styles
 Font.register({ family: "'Open Sans', sans-serif", src: openSans });
@@ -16,7 +16,7 @@ Font.register({ family: "'Nunito', sans-serif", src: nunito });
 Font.register({ family: "'Courgette', cursive", src: Courgette });
 
 
-function Test1({ resume }) {
+function Template1({ resume }) {
 
     console.log(resume)
     
@@ -162,7 +162,7 @@ function Test1({ resume }) {
                         <Text style={styles.name}>{resume.header.name}</Text>
                         <Text style={styles.title}>{resume.header.title}</Text>
                     </View>
-                </View>
+                </View> 
             
                 <View style={styles.bio}>
                     <Text style={styles.bioText}>
@@ -330,4 +330,4 @@ function Test1({ resume }) {
     )
 }
 
-export default Test1
+export default Template1

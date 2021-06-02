@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Landing, Test1, ResumeCreate } from './pages'
+import { Landing, Template1, Template2, ResumeCreate } from './pages'
 import { DetailsContext } from './contexts/DetailsContext'
 import { PDFViewer } from '@react-pdf/renderer';
 import './App.css';
@@ -18,9 +18,15 @@ function App() {
           <Route path="/" exact>
             <Landing />
           </Route>
-          <Route path="/template/:id" exact>
+          <Route path="/template/1" exact>
             <PDFViewer>
-              <Test1 resume={resume}/>
+              <Template1 resume={resume}/>
+            </PDFViewer>
+          </Route>
+
+          <Route path="/template/2" exact>
+            <PDFViewer>
+              <Template2 resume={resume}/>
             </PDFViewer>
           </Route>
 
