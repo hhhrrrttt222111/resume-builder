@@ -1,5 +1,6 @@
-import { Button } from '@material-ui/core';
 import React from 'react'
+
+import { Main, Features } from '../../components'
 
 
 function Landing() {
@@ -7,7 +8,8 @@ function Landing() {
     
     return (
         <div className="landing">
-            <h1>Main Page</h1>
+            <Main />
+            <Features />
         </div>
     )
 }
