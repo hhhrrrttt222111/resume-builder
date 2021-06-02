@@ -12,18 +12,16 @@ import { DetailsContext } from '../../../contexts/DetailsContext'
 
 function SkillInterest() {
 
-    const { resume, updateInterests, updateSkills } = useContext(DetailsContext);
+    const { updateInterests, updateSkills } = useContext(DetailsContext);
     const { register, handleSubmit } = useForm();
 
 
     const onSkillSubmit = (data) => {
         updateSkills(data)
-        console.log(resume.skills)
     };
 
     const onInterestSubmit = (data) => {
         updateInterests(data)
-        console.log(resume.interests)
     };
 
     return (

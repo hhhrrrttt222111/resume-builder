@@ -30,6 +30,7 @@ function ChooseTemplate() {
 
     useEffect(() => {
         updateTemplate(tempId)
+        // eslint-disable-next-line
     }, [tempId])
 
     return (

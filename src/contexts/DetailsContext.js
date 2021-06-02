@@ -9,7 +9,7 @@ function DetailsContextProvider(props) {
         image: '',
         header: {},
         education: {},
-        skill: [],
+        skills: [],
         interests: [],
         contact: {},
         theme: {}

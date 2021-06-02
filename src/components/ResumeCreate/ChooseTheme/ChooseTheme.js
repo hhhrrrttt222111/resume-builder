@@ -1,6 +1,4 @@
-import React, { useContext, useState } from 'react'
-import { useForm } from "react-hook-form";
-import { Button } from '@material-ui/core';
+import React, { useContext, useState, useEffect } from 'react'
 import { SketchPicker } from 'react-color';
 
 import './ChooseTheme.css'
@@ -10,13 +8,21 @@ function ChooseTheme() {
 
     const [primary, setPrimary] = useState('#66ffff')
     const [secondary, setSecondary] = useState('#ccffff')
-    const { resume, updateTheme } = useContext(DetailsContext);
-    const { register, handleSubmit } = useForm();
+    const { updateTheme } = useContext(DetailsContext);
 
-    const onSubmit = (data) => {
-        updateTheme(data)
-        console.log(resume.theme)
-    };
+
+    useEffect(() => {
+        const onSubmit = () => {
+            const data = {
+                primary: primary,
+                secondary: secondary
+            }
+            updateTheme(data)
+        };
+
+        onSubmit()
+    // eslint-disable-next-line
+    }, [primary, secondary])
 
     return (
         <div className="chooseTheme">
@@ -27,18 +33,14 @@ function ChooseTheme() {
                         <h3>Choose Header Color</h3>
                         <SketchPicker 
                             color={primary}
-                            {...register("primary")} 
                             onChangeComplete={targetColor => setPrimary(targetColor.hex)}
-                            onChange={handleSubmit(onSubmit)}
                         />
                     </div>
                     <div className="chooseSecondaryTheme" style={{background: secondary}}>
                         <h3>Choose Page Color</h3>
                         <SketchPicker 
                             color={secondary}
-                            {...register("secondary")} 
                             onChangeComplete={targetColor => setSecondary(targetColor.hex)}
-                            onChange={handleSubmit(onSubmit)}
                         />
                     </div>
                 </div>
