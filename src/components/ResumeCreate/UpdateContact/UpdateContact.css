@@ -1,0 +1,66 @@
+.updateContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.updateContact > h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contactFormContainer {
+    margin: 3rem 0;
+    width: 100%;
+}
+
+
+.contactFormOne, .contactFormTwo, .contactFormThree {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.input_c {
+    background: pink;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    width: 80%;
+    height: 48px;
+    margin: 1.3rem;
+    padding-left: 1rem;
+    color: black;
+}
+
+.input_add {
+    background: pink;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    min-height: 5rem;
+    width: 80%;
+    height: 48px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: black;
+}
+
+.contactForm > button, .contactForm > button:hover {
+    float: right;
+    font-size: 18px;
+    margin-top: 2rem;
+    padding: 0.7rem 2.1rem;
+    text-transform: inherit;
+    color: red;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: black;
+}

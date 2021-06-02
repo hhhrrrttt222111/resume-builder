@@ -73,7 +73,6 @@ function UpdateHeader() {
                                 onChange={handleSubmit(onSubmit)}
                                 className="input_title"
                             />
-
                         </div>
                     </div>
                     <div className="headerFormTwo">
