@@ -1,4 +1,75 @@
 .main {
     height: 100vh;
-    background-color: yellowgreen;
+    position: relative;
 }
+
+.main > h1 {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    
+}
+
+
+
+
+.main-container{
+    padding-top: 8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.main-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 2rem;
+    flex: 0.5;
+}
+
+.main-description>h1{
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.main-description>p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.main-description>button{
+    margin-top: 2rem;
+   font-size: 18px;
+   padding: 0.7rem 2.1rem;
+   text-transform: inherit;
+   color: blue;
+   border: 1px solid green;
+   box-sizing: border-box;
+   border-radius: 12px;
+   background-color: greenyellow;
+
+    
+}
+
+.img-container {
+    margin: 2rem;
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container>img{
+    height: 450px;
+    width: 400px;
+}
+
