@@ -8,3 +8,4 @@ export { default as ChooseTheme } from './ResumeCreate/ChooseTheme/ChooseTheme'
 
 export { default as Main } from './Landing/Main/Main'
 export { default as Features } from './Landing/Features/Features'
+export { default as Demo } from './Landing/Demo/Demo'

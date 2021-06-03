@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Main, Features } from '../../components'
+import { Main, Features, Demo } from '../../components'
 
 
 function Landing() {
@@ -10,6 +10,7 @@ function Landing() {
         <div className="landing">
             <Main />
             <Features />
+            <Demo />
         </div>
     )
 }

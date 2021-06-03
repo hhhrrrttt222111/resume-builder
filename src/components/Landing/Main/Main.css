@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.main > h1 {
+.main  >  h1 {
     position: absolute;
     top: 10px;
     left: 5%;
@@ -20,7 +20,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   
 }
@@ -31,21 +31,23 @@
     justify-content: space-evenly;
     align-items: flex-start;
     margin: 2rem;
-    flex: 0.5;
+    margin-left: 8rem;
+    flex: 0.4;
 }
 
-.main-description>h1{
+.main-description > h1{
     margin-bottom: 20px;
     font-size: 3rem;
-    font-weight: 900;
+    width: 80%;
 }
 
-.main-description>p{
+.main-description > p{
     font-size: 1.5rem;
     font-weight: 400;
+    width: 80%;
 }
 
-.main-description>button{
+.main-description > button, .main-description > button:hover {
     margin-top: 2rem;
    font-size: 18px;
    padding: 0.7rem 2.1rem;
@@ -61,14 +63,49 @@
 
 .img-container {
     margin: 2rem;
-    flex: 0.5;
+    flex: 0.6;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.img-container>img{
+.img-container > img {
     height: 450px;
     width: 400px;
+    pointer-events: none;
 }
 
+
+
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
