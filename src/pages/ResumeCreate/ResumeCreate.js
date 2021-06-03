@@ -6,10 +6,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { IoDocumentOutline } from "react-icons/io5";
+import { GrCaretPrevious, GrCaretNext } from "react-icons/gr";
+import {  FcPrevious, FcNext } from "react-icons/fc";
 
 import { DetailsContext } from '../../contexts/DetailsContext'
 import { ChooseTemplate, UpdateHeader, UpdateEduExp, SkillInterest, UpdateContact, ChooseTheme } from '../../components'
+
+
+import prevButton from '../../assets/images/svg/prev.svg'
+import nextButton from '../../assets/images/svg/next.svg'
 import './ResumeCreate.css'
+
 
 
 function ResumeCreate() {
@@ -84,17 +91,17 @@ function ResumeCreate() {
                         </Slider>
                     </div>
                 </div>
-                <div className="resumeSlider_Buttons">
+                <div className="resumeSlider_Buttons" style={{justifyContent: slide === 1 ? 'flex-end' : 'space-between'}} >
                     <Button onClick={gotoPrev} style={{display: slide === 1 ? 'none' : 'inline-block'}}>
-                        Prev
+                        <FcPrevious className="prevButton"/>
                     </Button>
                     <Button onClick={gotoNext} style={{display: slide === 6 ? 'none' : 'inline-block'}}>
-                        Next
+                        <FcNext className="nextButton"/>
                     </Button>
 
 
-                    <Button onClick={generatePDF} style={{display: slide === 6 ? 'inline-block' : 'none'}}>
-                        Genarate
+                    <Button onClick={generatePDF} className="generate_btn" style={{display: slide === 6 ? 'inline-block' : 'none'}}>
+                        Generate
                         <IoDocumentOutline className="generate_pdf"/>
                     </Button>
                 </div>

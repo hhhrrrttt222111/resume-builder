@@ -1,5 +1,9 @@
 .resumeCreate {
     height: 100vh;
+    background-image: url(../../assets/images/svg/bg.svg);
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .resumeCreate_Container {
@@ -11,10 +15,28 @@
     justify-content: center;
 }
 
+.resumeCreate_header {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Nunito;
+    font-size: 1.1rem;
+    margin-left: -75%;
+}
 .resumeCreate_Body {
     margin: 2rem;
-    background-color: rgb(211, 164, 164);
-    width: 80%;
+    /* pushing it down */
+    transform: translate(0, 8%);
+
+    /* glass texture */
+    background: linear-gradient(305.17deg, rgba(94, 94, 94, 0.128) 2.36%, rgba(255, 254, 254, 0.328) 97.48%);
+
+    -webkit-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    width: 70%;
+    
+    border: 2px solid #108fd934;
+
 }
 
 .slick-slider {
@@ -40,23 +62,41 @@
 .resumeSlider_Buttons {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
 .resumeSlider_Buttons > button, .resumeSlider_Buttons > button:hover {
     font-size: 18px;
     text-transform: inherit;
-    color: whitesmoke;
-    border: 1px solid blueviolet;
+    color: #1090D9;
+    /* border: 1px solid blueviolet; */
     box-sizing: border-box;
-    border-radius: 12px;
-    margin-top: -0.6rem;
-    background-color: green;
+    margin-top: -2rem;
+    /* background-color: green; */
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 70px;
+    height: 70px;
+    /* background: #58B7EC; */
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.3), 5px 5px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 80px;
 }
+
+.nextButton, .prevButton{
+    /* stroke: inherit;
+    transform: scale(2);
+    stroke-width: 2px; */
+}
+
+.resumeSlider_Buttons > .generate_btn, .resumeSlider_Buttons > .generate_btn:hover {
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 150px;
+}
+
 
 
 .generate_pdf {

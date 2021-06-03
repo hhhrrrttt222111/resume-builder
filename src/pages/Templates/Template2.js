@@ -1,7 +1,7 @@
 import React from 'react';
 import { Document, Page, Text, View, StyleSheet, Image, Font } from '@react-pdf/renderer';
 
-
+import avatar from '../../assets/images/png/avatar.png'
 import openSans from '../../assets/fonts/OpenSans-Light.ttf'
 import Alegreya from '../../assets/fonts/AlegreyaSansSC-Bold.ttf'
 import ubuntu from '../../assets/fonts/UbuntuMono-Italic.ttf'
@@ -70,11 +70,11 @@ function Template2({ resume }) {
             marginTop: 10,
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center'
+            alignItems: 'flex-start',
+            justifyContent: 'space-evenly'
         },
         educationContainer: {
-            marginLeft: 30,
+            marginLeft: 0,
             marginRight: 40,
             marginBottom: 15,
             display: 'flex',
@@ -87,6 +87,14 @@ function Template2({ resume }) {
             fontSize: 15,
             textTransform: 'uppercase',
             marginLeft: '-68px',
+            fontFamily: "'Alegreya Sans SC', sans-serif"
+        },
+        expHeading: {
+            marginBottom: 5,
+            marginTop: 15,
+            fontSize: 15,
+            textTransform: 'uppercase',
+            marginLeft: '8px',
             fontFamily: "'Alegreya Sans SC', sans-serif"
         },
         education: {
@@ -121,10 +129,10 @@ function Template2({ resume }) {
             justifyContent: 'flex-start'
         },
         skillsCont: {
-            marginLeft: 42,
+            marginLeft: 72,
         },
         interestsCont: {
-            marginLeft: 207,
+            marginLeft: 243,
         },
         skillInterestHeading: {
             marginBottom: 10,
@@ -172,7 +180,7 @@ function Template2({ resume }) {
                     {resume.image ? (
                         <Image src={resume.image} style={styles.avatar}/>
                     ) : (
-                        <Image src="https://avatars.githubusercontent.com/u/43471295?v=4" style={styles.avatar}/>
+                        <Image src={avatar} style={styles.avatar}/>
                     )}
                     <View style={styles.headerRight}>
                         <Text style={styles.name}>{resume.header.name}</Text>
@@ -225,7 +233,7 @@ function Template2({ resume }) {
                     <View style={styles.bodyRight}>     
                         <View style={styles.educationContainer}>
                             {resume.education.company1 ? (
-                                <Text style={styles.eduHeading}>Experience</Text>
+                                <Text style={styles.expHeading}>Experience</Text>
                             ) : (
                                 <></>
                             )}

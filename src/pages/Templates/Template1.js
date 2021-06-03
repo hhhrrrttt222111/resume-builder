@@ -1,7 +1,7 @@
 import React from 'react';
 import { Document, Page, Text, View, StyleSheet, Image, Font } from '@react-pdf/renderer';
 
-
+import avatar from '../../assets/images/png/avatar.png'
 import openSans from '../../assets/fonts/OpenSans-Light.ttf'
 import Alegreya from '../../assets/fonts/AlegreyaSansSC-Bold.ttf'
 import ubuntu from '../../assets/fonts/UbuntuMono-Italic.ttf'
@@ -156,7 +156,7 @@ function Template1({ resume }) {
                     {resume.image ? (
                         <Image src={resume.image} style={styles.avatar}/>
                     ) : (
-                        <Image src="https://avatars.githubusercontent.com/u/43471295?v=4" style={styles.avatar}/>
+                        <Image src={avatar} style={styles.avatar}/>
                     )}
                     <View style={styles.headerRight}>
                         <Text style={styles.name}>{resume.header.name}</Text>

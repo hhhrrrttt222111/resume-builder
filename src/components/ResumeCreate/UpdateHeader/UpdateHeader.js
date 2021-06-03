@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 
 import './UpdateHeader.css'
 import { DetailsContext } from '../../../contexts/DetailsContext'
-
+import upload from '../../../assets/images/svg/upload.svg'
 
 
 function UpdateHeader() {
@@ -46,9 +46,9 @@ function UpdateHeader() {
                 <form noValidate autoComplete="off" onSubmit={handleSubmit(onSubmit)} className="headerForm">
                     <div className="headerFormOne">
                         <div className="headerFormOneLeft">
-                            <div style={{background: image? `url("${image}") no-repeat center/cover`: 'url("https://networkprogramming.files.wordpress.com/2019/02/content.jpg") no-repeat center/cover'}} className="image-upload">
+                            <div style={{background: image? `url("${image}") no-repeat center/cover`: `url(${upload}) no-repeat center/cover`}} className="image-upload">
                                 <input 
-                                    type="file" 
+                                    type="file"     
                                     onChange={imageHandler} 
                                     name="image"
                                     id="fileUpload"
