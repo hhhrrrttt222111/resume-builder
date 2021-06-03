@@ -6,15 +6,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { IoDocumentOutline } from "react-icons/io5";
-import { GrCaretPrevious, GrCaretNext } from "react-icons/gr";
 import {  FcPrevious, FcNext } from "react-icons/fc";
 
 import { DetailsContext } from '../../contexts/DetailsContext'
 import { ChooseTemplate, UpdateHeader, UpdateEduExp, SkillInterest, UpdateContact, ChooseTheme } from '../../components'
 
 
-import prevButton from '../../assets/images/svg/prev.svg'
-import nextButton from '../../assets/images/svg/next.svg'
 import './ResumeCreate.css'
 
 
