@@ -5,10 +5,13 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
+    /* extra */
+    color: #03263a;
 }
 
 .chooseTemplate > h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: -1rem;
 }
 
 .templatesContainer {
@@ -24,9 +27,15 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    border-radius: 15px;
+    transition: 0.5s ease;
 }
 
 .template > img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
     width: 280px;
 }
 

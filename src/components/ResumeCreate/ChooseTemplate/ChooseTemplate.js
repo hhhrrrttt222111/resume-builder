@@ -38,7 +38,7 @@ function ChooseTemplate() {
             <h1>Choose template</h1>
             <Grid container direction="row" alignItems="center" justify="center" className="templatesContainer">
                 {templates.map((template) => (
-                    <div className="template" key={template.id} onClick={() => setTempId(template.id)} style={{border: template.id === tempId ? '4px solid red' : 'none', opacity: template.id === tempId ? '1' : '0.9'}}>
+                    <div className="template" key={template.id} onClick={() => setTempId(template.id)} style={{transform: template.id === tempId ? 'scale(1.0)' : 'scale(0.9)', boxShadow: template.id === tempId ? '5px 5px 10px #000000a0, -5px -5px 10px #ffffff40' : 'none'}}>
                         <img src={template.img} alt={template.name} />
                         <p>{template.name}</p>
                     </div>

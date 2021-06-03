@@ -4,11 +4,14 @@
     align-items: center;
     padding: 1rem;
     overflow: hidden;
+
+    color: #03263a;
 }
 
 .updateEduExp > h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-top: 1rem;
+    margin-bottom: -.5rem;
 }
 
 .experienceForm, .educationForm {
@@ -16,12 +19,18 @@
 }
 
 .experienceForm > h3, .educationForm > h3{
+    font-size: 25px;
     margin-bottom: 1.15rem;
 }
 
+.experienceForm h4, .educationForm h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: .9rem;
+    color: #A6D1E9;
+}
+
 .input_ee {
-    background: pink;
-    border: 1px solid red;
     box-sizing: border-box;
     border-radius: 8px;
     outline: none;
@@ -29,30 +38,37 @@
     height: 48px;
     margin: 0.3rem 0;
     padding-left: 1rem;
-    color: black;
-}
 
-.experienceForm > button, .experienceForm > button:hover {
-    font-size: 18px;
-    margin-top: 2rem;
-    padding: 0.4rem 1.9rem;
-    text-transform: inherit;
-    color: red;
-    border: 1px solid red;
-    box-sizing: border-box;
-    border-radius: 12px;
-    background-color: black;
+    border: none;
+    margin-bottom: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(15, 244, 252);
+    font-weight: 600;
+    background: rgba(17, 133, 112, 0.3);
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.55), inset 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 7px;
 }
 
 
-.educationForm > button, .educationForm > button:hover {
-    font-size: 18px;
+.eduExpFormContainer button, .eduExpFormContainer button:hover {
+    font-size: 1.3rem;
+    font-weight: 600;
     margin-top: 2rem;
-    padding: 0.4rem 1.9rem;
+    padding: 0.6rem 2.0rem;
     text-transform: inherit;
-    color: red;
-    border: 1px solid red;
     box-sizing: border-box;
-    border-radius: 12px;
-    background-color: black;
+    
+    margin-left: 40%;
+    color: #ddf0ed;
+    background: #1090D9;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.55), 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 40px;
+}
+
+    .MuiIconButton-label {
+        color:#A6D1E9 !important;
+    }
+    .MuiPaper-root {
+        background:rgba(6, 59, 90, 0.56) !important;
 }
