@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { IoDocumentOutline } from "react-icons/io5";
-import { GrCaretPrevious, GrCaretNext } from "react-icons/gr";
 import {  FcPrevious, FcNext } from "react-icons/fc";
 
 import { DetailsContext } from '../../contexts/DetailsContext'

@@ -10,6 +10,7 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 3rem;
+    font-family: 'Barlow', sans-serif; 
 }
 
 
@@ -39,12 +40,14 @@
     margin-bottom: 20px;
     font-size: 3rem;
     width: 80%;
+    font-family: 'Barlow', sans-serif; 
 }
 
 .main-description > p{
     font-size: 1.5rem;
-    font-weight: 400;
+    
     width: 80%;
+    font-family: 'Barlow', sans-serif; 
 }
 
 .main-description > button, .main-description > button:hover {
@@ -80,28 +83,90 @@
 
 
 @media (min-width: 992px) and (max-width: 1380px) {
+    .main-container{
+        padding-top: 5rem;
+
+    }
+    .main-description{
+        margin-left: 6rem;
+    }
+    
 
 }
 
 
 @media screen and (max-width: 992px) {
+    .main{
+        height: fit-content;
+    }
+
+    .main > h1{
+         font-size: 2.5rem;
+    }
+    .main-container{
+        padding-top: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      
+    }
+    .main-description{
+        flex: 1;
+        margin-left: 0rem;
+        margin: 2rem;
+    }
+
+    .main-description > h1{
+        font-size: 2.5rem;
+    }
+    .img-container{
+        flex: 1;
+        margin: 3rem;
+    }
+
 
 }
 
 @media screen and (max-width: 800px) {
+    .main{
+
+    }
+    
+    .main-container{
+        padding-top: 5rem;      
+    }
+    .img-container{
+        margin: 2rem;
+    }
 
 }
 
 @media screen and (max-width: 600px) {
+    .main{
+
+    }
+    .main-container{
+        padding-top: 4rem;
+      
+    }
+
+    .main-description{
+        
+    }
 
 }
 
 @media screen and (max-width: 400px) {
 
+
+
 }
   
 @media only screen and (min-device-width: 320px) and (max-device-width: 
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  
 
 }
 

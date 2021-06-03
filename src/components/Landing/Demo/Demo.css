@@ -1,4 +1,47 @@
 .demo {
     height: 100vh;
     background-color: hotpink;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.demo-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-card{
+    margin: 2rem;
+}
+
+.demo-card > .MuiCardContent-root{
+    padding: 0rem ;
+}
+
+.democard-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.democard-content > img{
+    width: 350px;
+    height: 180px;
+}
+
+.democard-content > h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.democard-content > p{
+    margin-bottom: 20px;
 }
