@@ -93,7 +93,7 @@ function ResumeCreate() {
                         <FcPrevious className="prevButton"/>
                     </Button>
                     <Button onClick={gotoNext} style={{display: slide === 6 ? 'none' : 'inline-block'}}>
-                        <FcNext className="nextButton"/>
+                        <FcNext className="nextButton" />
                     </Button>
 
 

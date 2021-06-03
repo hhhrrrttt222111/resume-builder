@@ -24,18 +24,18 @@
 .resumeCreate_Body {
     margin: 2rem;
     /* pushing it down */
-    transform: translate(0, 8%);
+    transform: translate(0, 5%);
 
     /* glass texture */
     background: linear-gradient(305.17deg, rgba(94, 94, 94, 0.128) 2.36%, rgba(255, 254, 254, 0.328) 97.48%);
-
     -webkit-backdrop-filter: blur(4px);
     -moz-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+    border: 2px solid #108fd934;
+
+    font-family: 'Barlow', sans-serif;
     border-radius: 15px;
     width: 70%;
-    
-    border: 2px solid #108fd934;
 
 }
 
@@ -85,16 +85,22 @@
     border-radius: 80px;
 }
 
-.nextButton, .prevButton{
-    /* stroke: inherit;
+.nextButton{
+    stroke: #1090D9;
     transform: scale(2);
-    stroke-width: 2px; */
+    stroke-width: 2px;
+}
+.prevButton{
+    stroke: #ddf0ed;
+    transform: scale(2);
+    stroke-width: 2px;
 }
 
 .resumeSlider_Buttons > .generate_btn, .resumeSlider_Buttons > .generate_btn:hover {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    width: 150px;
+    width: 170px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -103,6 +109,7 @@
     font-size: 1.4rem;
     padding-left: 0.5rem;
     margin-bottom: -0.2rem;
+    transform: scale(1.5);
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {

@@ -57,17 +57,19 @@ function UpdateHeader() {
                             </div>
                         </div>
                         <div className="headerFormOneRight">
+                            <label className="headerLabelName">Type Your Name</label>
                             <input 
                                 type="text" 
-                                placeholder="Your Name" 
+                                placeholder="Eg. John Britto" 
                                 {...register("name")} 
                                 name="name"
                                 onChange={handleSubmit(onSubmit)}
                                 className="input_name"
                             />
+                            <label className="headerLabelTitle">Type Your Title</label>
                             <input 
                                 type="text" 
-                                placeholder="Title" 
+                                placeholder="Eg. Sales Executive" 
                                 {...register("title")} 
                                 name="title"
                                 onChange={handleSubmit(onSubmit)}
@@ -76,9 +78,10 @@ function UpdateHeader() {
                         </div>
                     </div>
                     <div className="headerFormTwo">
+                        <label className="headerLabelBio">Your Bio</label>
                         <textarea 
                             type="text" 
-                            placeholder="Bio" 
+                            placeholder="I am currently working at...." 
                             {...register("bio")} 
                             name="bio"
                             onChange={handleSubmit(onSubmit)}
