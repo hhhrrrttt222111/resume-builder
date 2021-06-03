@@ -13,8 +13,6 @@ import { DetailsContext } from '../../contexts/DetailsContext'
 import { ChooseTemplate, UpdateHeader, UpdateEduExp, SkillInterest, UpdateContact, ChooseTheme } from '../../components'
 
 
-import prevButton from '../../assets/images/svg/prev.svg'
-import nextButton from '../../assets/images/svg/next.svg'
 import './ResumeCreate.css'
 
 
