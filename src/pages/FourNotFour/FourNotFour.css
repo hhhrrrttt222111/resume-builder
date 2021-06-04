@@ -1,4 +1,73 @@
 .fnf {
-    height: 100vh;
-    background-color: blueviolet;
+    height: 100%;
+    background-color: lavender;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fnf-imgcontainer > img {
+    width: 500px;
+    pointer-events: none;
+}
+
+.fnf-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    
+}
+
+.fnf-description > h1{
+    font-size: 7rem;
+    margin-bottom: 20px;
+}
+
+.fnf-description > h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.fnf-description > p {
+    font-size: 1rem;
+}
+
+.fnf-description > button, .fnf-description > button:hover {
+    margin-top: 2rem;
+    font-size: 18px;
+    padding: 0.7rem 2.1rem;
+   text-transform: inherit;
+   color: blue;
+   border: 1px solid green;
+   box-sizing: border-box;
+   border-radius: 12px;
+   width: 7rem;
+}
+
+@media screen and (max-width: 992px){
+    .fnf {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fnf-imgcontainer > img {
+        width: 350px;
+    }
+
+    .fnf-description {
+        margin-bottom: 20px  ;
+    }
+
+    .fnf-description > h1 {
+        font-size: 4rem;
+    }
+
+    .fnf-description > h2 {
+        font-size: 2.5rem;
+    }
 }

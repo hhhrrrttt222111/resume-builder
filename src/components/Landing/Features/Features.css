@@ -46,8 +46,7 @@
 
 
 .features-img>img{
-    height: 450px;
-    width: 400px;
+    width: 450px;
     pointer-events: none;
 }
 

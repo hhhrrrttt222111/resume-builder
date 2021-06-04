@@ -1,9 +1,10 @@
 .resumeCreate {
     height: 100vh;
     background-image: url(../../assets/images/svg/bg.svg);
-    background-size: 100% 120%;
     background-repeat: no-repeat;
+    background-size: 100% 120%;
     background-position: center;
+    overflow: hidden;
 }
 
 .resumeCreate_Container {
@@ -19,7 +20,8 @@
     color: rgba(255, 255, 255, 0.8);
     font-family: Nunito;
     font-size: 1.1rem;
-    margin-left: -75%;
+    align-self: flex-start;
+    margin-left: -5%;
 }
 
 /* HrtStepper Desktop starts here */
@@ -27,7 +29,7 @@
 .HrtStepper{
     width: 600px;
     height: 80px;
-  /*   background: red; */
+    /*   background: red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -76,39 +78,7 @@
 
   /* HrtStepper Desktop ends here */
 
-  /* HrtStepper Mobile starts here */
-    
-  @media (max-width: 700px){
-
-    .HrtStepper{
-        width: 150px;
-        height: 30px;
-    }
-    .HrtStepperItem{
-        height: 15px;
-        width: 15px;
-    }
-    .HrtStepperItem i{
-        display: none;
-    }
-    .HrtStepperBar{
-        width: 120px;
-        height: 5px;
-        background: white;
-        border-radius: 5px;
-      }
-    
-    .prevButton, .nextButton{
-        width: 60px;
-        height: 60px;
-    }
-    .nextButton{
-        transform: translate(20vh,35vh);
-    }
-  }
-
-    /* HrtStepper Mobile ends here */
-
+  
 .resumeCreate_Body {
     margin: 2rem;
     /* pushing it down */
@@ -200,57 +170,257 @@
     transform: scale(1.5);
 }
 
+@media (min-width: 1380px) and (max-width: 1500px) {
+    .resumeCreate{
+        background-size: cover;
+        background-position: center;
+    }
+    .generate_btn{
+        margin-left: 10%;
+    
+    }
+
+}
 @media (min-width: 992px) and (max-width: 1380px) {
+    .resumeCreate{
+        background-size: cover;
+        background-position: center;
+    }
     .resumeCreate_Container {
         padding: 2rem 3rem;
     }
+    .resumeCreate_header {
+        margin-top: -1%;
+        margin-left: -1%;
+        font-size: 1rem;
+    }
+    .HrtStepper{
+        transform: scale(0.75);
+      }
 }
 
 
 @media screen and (max-width: 992px) {
     .resumeCreate {
-        height: 100%;
+        background-size: cover;
+        background-position: 30% 5%;
     }
     
     .resumeCreate_Container {
         padding: 2rem 0rem;
     }
+
+    .resumeCreate_header {
+        margin-top: -1.2%;
+        color: rgba(255, 255, 255);
+        margin-left: 3%;
+        font-size: 0.98rem;
+    }
+
     .resumeCreate_Body {
         margin: 2rem;
-        background-color: rgb(233, 194, 194);
-        width: 80%;
+        /* pushing it down */
+        transform: translate(0, 5%);
+
+        /* glass texture */
+        background: linear-gradient(305.17deg, rgba(94, 94, 94, 0.128) 2.36%, rgba(255, 254, 254, 0.328) 97.48%);
+        -webkit-backdrop-filter: blur(4px);
+        -moz-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        border: 2px solid #108fd934;
+
+        font-family: 'Barlow', sans-serif;
+        border-radius: 15px;
+        width: 70%;
+    }
+
+    .resumeSlider_Buttons {
+        width: 90%;
+    }
+    .slick-slider {
+        height: 490px !important;
+    }
+    .generate_btn{
+        width: 65px !important;
+    }
+    .generateText{
+        display: none;
+    }
+    .generate_pdf {
+        padding-left: 0rem;
+        margin-bottom: 0rem;
+        transform: scale(1.5);
     }
 }
 
 @media screen and (max-width: 800px) {
+    .resumeCreate{
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        /* background-size: cover; */
+        background-position: 40% 0%;
+    }
     .resumeCreate_Container {
         padding: 2rem 0rem;
     }
+    .HrtStepper{
+        margin-bottom: -12%;
+    }
+    .resumeCreate_header{
+        align-self: center;
+        text-align: center;
+        color: rgba(255, 255, 255);
+        font-size: 1.1rem;
+        margin-bottom: -1%;
+    }
     .resumeCreate_Body {
-        margin: 2rem;
-        background-color: rgb(233, 194, 194);
-        width: 100%;
+        margin: 1rem;
+        /* pushing it down */
+        transform: translate(0, 5%);
+
+        /* glass texture */
+        background: linear-gradient(305.17deg, rgba(94, 94, 94, 0.128) 2.36%, rgba(255, 254, 254, 0.328) 97.48%);
+        -webkit-backdrop-filter: blur(4px);
+        -moz-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        border: 2px solid #108fd934;
+
+        font-family: 'Barlow', sans-serif;
+        border-radius: 15px;
+        margin-top: 10%;
+        width: 70%;
+    }
+    .slick-slider {
+        height: 480px !important;
     }
     .resumeSlider_Buttons {
         margin-top: 1rem;
+        width: 95%;
     }
+    .resumeSlider_Buttons > button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
 }
+
+/* HrtStepper Mobile starts here */
+    
+@media (max-width: 700px){
+    .resumeCreate_header{
+        margin-bottom: -3%;
+    }
+    .HrtStepper{
+        width: 150px;
+        height: 30px;
+        margin-top: 8% !important;
+    }
+    .HrtStepperItem{
+        height: 15px;
+        width: 15px;
+    }
+    .HrtStepperItem i{
+        display: none;
+    }
+    .HrtStepperBar{
+        width: 120px;
+        height: 5px;
+        background: white;
+        border-radius: 5px;
+      }
+  }
+
+    /* HrtStepper Mobile ends here */
+
 
 @media screen and (max-width: 600px) {
+
+    .resumeCreate{
+        background-image: url(../../assets/images/svg/bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 45% 0%;
+    }
+
+    .HrtStepper{
+        transform: scale(0.8);
+        margin-top: 5% !important;
+    }
+
+    .resumeCreate_header{
+        margin-bottom: 0;
+    }
+
     .resumeCreate_Body {
-        margin: 1rem;
-        background-color: rgb(233, 194, 194);
-        width: 100%;
+        /* pushing it down */
+        margin-top: 10%;
+        border-radius: 15px;
+        width: 80%;
+    }
+    .slick-slider {
+        height: 450px !important;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 4.5rem;
     }
 }
 
+@media screen and (max-width: 525px) {
+    .HrtStepper{
+        margin-top: 2% !important;
+        transform: scale(0.8);
+    }
+    .resumeSlider_Buttons {
+        margin-top: 5rem;
+    }
+    .slick-slider {
+        height: 400px !important;
+    }
+    .resumeSlider_Buttons button{
+        transform: scale(0.95);
+    }
+}
 @media screen and (max-width: 400px) {
-
+    .resumeCreate_Body {
+        /* pushing it down */
+        margin-top: 10%;
+        border-radius: 15px;
+        width: 80%;
+    }
+    .slick-slider {
+        height: 350px !important;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 6rem;
+    }
+    .resumeSlider_Buttons button{
+        transform: scale(0.9);
+    }
 }
   
-@media only screen and (min-device-width: 320px) and (max-device-width: 
-  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-
+@media only screen and (max-device-width: 330px){
+    .resumeCreate_header {
+        font-size: 0.9rem;
+        align-self: flex-start;
+        margin-top: -5%;
+    }
+    .HrtStepper{
+        transform: scale(0.5);
+        margin-top: 4% !important;
+        margin-bottom: -15%;
+    }
+    .slick-slider {
+        height: 250px !important;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 4.5rem;
+    }
+    .resumeSlider_Buttons button{
+        transform: scale(0.8);
+    }
 }
 
 
