@@ -41,6 +41,7 @@ function ResumeCreate() {
     };
 
 
+
     const gotoNext = () => {
         sliderRef.current.slickNext();
         setSlide(slide + 1);
