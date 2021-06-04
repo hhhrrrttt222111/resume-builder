@@ -6,8 +6,8 @@ import { DetailsContext } from '../../../contexts/DetailsContext'
 
 function ChooseTheme() {
 
-    const [primary, setPrimary] = useState('#66ffff')
-    const [secondary, setSecondary] = useState('#ccffff')
+    const [primary, setPrimary] = useState('#ccffff')
+    const [secondary, setSecondary] = useState('#1090D9')
     const { updateTheme } = useContext(DetailsContext);
 
 

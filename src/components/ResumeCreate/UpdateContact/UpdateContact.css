@@ -4,63 +4,91 @@
     align-items: center;
     padding: 1rem;
     overflow: hidden;
+    /* extra */
+    color: #03263a;
 }
 
 .updateContact > h1 {
-    font-size: 1.5rem;
+    font-size: 3.2rem;
     margin-top: 1rem;
+    margin-bottom: -1rem;
 }
 
 .contactFormContainer {
     margin: 3rem 0;
-    width: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
+.contactFormContainer label{
+    margin-bottom: -.5rem;
+}
 
-.contactFormOne, .contactFormTwo, .contactFormThree {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 1rem;
+/* address label aligning */
+.contactFormFour label{
+    margin-bottom: 0.5rem;
+}
+
+.contactFormOne, .contactFormTwo, .contactFormThree, .contactFormFour {
+    margin-bottom: .2rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .input_c {
-    background: pink;
-    border: 1px solid red;
     box-sizing: border-box;
-    border-radius: 8px;
     outline: none;
-    width: 80%;
+    border: none;
+    width: 100%;
     height: 48px;
-    margin: 1.3rem;
+    margin: 1rem 0;
     padding-left: 1rem;
-    color: black;
-}
 
-.input_add {
-    background: pink;
-    border: 1px solid red;
+    /* extra */
+    margin-bottom: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(35, 68, 179);
+    font-weight: 600;
+    background: rgba(17, 133, 112, 0.3);
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.55), inset 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 7px;
+}
+.input_add{
     box-sizing: border-box;
     border-radius: 8px;
     outline: none;
+    min-width: 100%;
     min-height: 5rem;
-    width: 80%;
     height: 48px;
     padding-left: 1rem;
     padding-top: 1rem;
     color: black;
+    
+    /* extra */
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(35, 68, 179);
+    font-weight: 600;
+    background: rgba(17, 133, 112, 0.3);
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.55), inset 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 7px;
 }
 
 .contactForm > button, .contactForm > button:hover {
-    float: right;
-    font-size: 18px;
+    font-size: 1.3rem;
+    font-weight: 600;
     margin-top: 2rem;
-    padding: 0.7rem 2.1rem;
+    padding: 0.6rem 2.0rem;
     text-transform: inherit;
-    color: red;
-    border: 1px solid red;
     box-sizing: border-box;
-    border-radius: 12px;
-    background-color: black;
+    
+    margin-left: 40%;
+    color: #ddf0ed;
+    background: #1090D9;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.55), 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 40px;
 }
