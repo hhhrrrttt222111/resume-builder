@@ -20,6 +20,7 @@ function UpdateHeader() {
     };
 
 
+
     const types = ['image/png', 'image/jpeg', 'image/jpg']
 
     

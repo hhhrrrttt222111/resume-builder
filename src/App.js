@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Landing, Template1, Template2, ResumeCreate } from './pages'
+import { Landing, Template1, Template2, ResumeCreate, FourNotFour } from './pages'
 import { DetailsContext } from './contexts/DetailsContext'
 import { PDFViewer } from '@react-pdf/renderer';
 import './App.css';
@@ -33,6 +33,8 @@ function App() {
           <Route path="/create" exact>
             <ResumeCreate />
           </Route>
+
+          <Route component={FourNotFour} />
 
         </Switch>
       </Router>
