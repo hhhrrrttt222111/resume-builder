@@ -3,11 +3,14 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    /* extra */
+    color: #03263a;
 }
 
 .chooseTheme > h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-top: 1rem;
+    margin-bottom: 0rem;
 }
 
 .themeFormContainer {
@@ -15,14 +18,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
 }
 
 .themeForm {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    width: 90%;
+}
+
+.themeForm h3{
+    font-size: 25px;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .choosePrimaryTheme, .chooseSecondaryTheme {
@@ -33,6 +41,12 @@
     align-items: center;
     justify-content: space-around;
     padding: 3rem;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+
+.choosePrimaryTheme{
+    margin-left: 5%;
 }
 
 

@@ -23,37 +23,43 @@ function UpdateContact() {
             <div className="contactFormContainer">
                 <form noValidate autoComplete="off" onSubmit={handleSubmit(onSubmit)} className="contactForm">
                     <div className="contactFormOne">
+                        <label className="contactLabelPhone">Phone</label>
                         <input 
                             type="text" 
-                            placeholder="Phone" 
+                            placeholder="Eg. 222111333" 
                             {...register("phone")} 
                             name="phone"
                             // onChange={handleSubmit(onSubmit)}
                             className="input_c"
                         />
+                    </div>
+                    <div className="contactFormOne">
+                        <label className="contactLabelEmail">Email</label>
                         <input 
                             type="text" 
-                            placeholder="Email" 
+                            placeholder="Eg. abcxyz@something.com" 
                             {...register("email")} 
                             name="email"
                             // onChange={handleSubmit(onSubmit)}
                             className="input_c"
                         />
                     </div>
-                    <div className="contactFormTwo">
+                    <div className="contactFormThree">
+                        <label className="contactLabelWebsite">Website</label>
                         <input 
                             type="text" 
-                            placeholder="Website" 
+                            placeholder="Eg. www.myofficialsite.com" 
                             {...register("website")} 
                             name="website"
                             // onChange={handleSubmit(onSubmit)}
                             className="input_c"
                         />
                     </div>
-                    <div className="contactFormThree">
+                    <div className="contactFormFour">
+                        <label className="contactLabelAddress">Address</label>
                         <textarea 
                             type="text" 
-                            placeholder="Address" 
+                            placeholder="Eg. 123 Main Street, New York, NY 10030" 
                             {...register("address")} 
                             name="address"
                             // onChange={handleSubmit(onSubmit)}
