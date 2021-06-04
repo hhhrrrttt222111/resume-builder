@@ -40,39 +40,29 @@ function ResumeCreate() {
         draggable: false,
     };
 
-    // progressBarSlide
-    // const move = (slide) => {
-    //     var i = 0;
-    //     for (; i < slide;  i++) { 
-    //         resumeCreate[i].style.background = "#1090D9"; 
-    //     }
-    
-    //     if(slide!==6)
-    //         resumeCreate[i].style.background = "#ECECEC";
-            
-    //     var percent = (slide-1)*20;
-    //     progress.style.width = percent+"%";
-    // }
-
 
     const gotoNext = () => {
         sliderRef.current.slickNext();
         setSlide(slide + 1);
-
-        // move(slide);
     }
 
     const gotoPrev = () => {
         sliderRef.current.slickPrev();
         setSlide(slide - 1);
-
-        // move(slide);
-
     }
 
 
     const generatePDF = () => {
         history.push(`/template/${template}`)
+    }
+
+    const setStepperWidth = (sld) => {
+        if (sld === 6){
+            return '100%'
+        }
+        else {
+            return `${sld*20 - 20}%`
+        }
     }
 
     console.log(resume)
@@ -85,24 +75,28 @@ function ResumeCreate() {
                 </div>
                 {/* stepper */}
                 <div className="HrtStepper">
-                    <div className="HrtStepperItem">
+                    <div className="HrtStepperItem" style={{background: slide >=1 ? '#1090D9' : '#ECECEC'}}>
                         <i className="fas fa-paper-plane"></i>
                     </div>
-                    <div className="HrtStepperItem">
-                        <i className="fas fa-user-tie"></i></div>
-                    <div className="HrtStepperItem">
+                    <div className="HrtStepperItem" style={{background: slide >=2 ? '#1090D9' : '#ECECEC'}}>
+                        <i className="fas fa-user-tie"></i>
+                    </div>
+                    <div className="HrtStepperItem" style={{background: slide >=3 ? '#1090D9' : '#ECECEC'}}>
                         <i className="fas fa-briefcase"></i>
                     </div>
-                    <div className="HrtStepperItem">
+                    <div className="HrtStepperItem" style={{background: slide >=4 ? '#1090D9' : '#ECECEC'}}>
                         <i className="fas fa-tools"></i>
                     </div>
-                    <div className="HrtStepperItem">
+                    <div className="HrtStepperItem" style={{background: slide >=5 ? '#1090D9' : '#ECECEC'}}>
                         <i className="fas fa-phone-volume"></i>
                     </div>
-                    <div className="HrtStepperItem">
-                        <i className="fas fa-paint-roller"></i></div> 
+                    <div className="HrtStepperItem" style={{background: slide >=6 ? '#1090D9' : '#ECECEC'}}>
+                        <i className="fas fa-paint-roller"></i>
+                    </div> 
                     <div className="HrtStepperBar">
-                        <div className="HrtStepperBarProgress"></div>
+                        <div className="HrtStepperBarProgress" style={{width: setStepperWidth(slide)}}>
+
+                        </div>
                     </div>
                 </div>
                 {/* stepper */}
