@@ -21,6 +21,94 @@
     font-size: 1.1rem;
     margin-left: -75%;
 }
+
+/* HrtStepper Desktop starts here */
+
+.HrtStepper{
+    width: 600px;
+    height: 80px;
+  /*   background: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+
+    transform: scale(0.8);
+
+    margin-bottom: -3.5rem;
+  }
+  
+  .HrtStepperItem{
+    background: #ECECEC;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0.2s ease 0.5s;
+    z-index: 2;
+  }
+  
+  .HrtStepperItem i{
+    transform: scale(1.8);
+    color: #063A57;
+  }
+  
+  .HrtStepperBar{
+    position: absolute;
+    width: 500px;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+    z-index: 0;
+  }
+  
+  .HrtStepperBarProgress{
+    width: 0%;
+    height: 100%;
+    background: #1090D9;
+    border-radius: 5px;
+    transition: 1s ease;
+  }
+
+  /* HrtStepper Desktop ends here */
+
+  /* HrtStepper Mobile starts here */
+    
+  @media (max-width: 700px){
+
+    .HrtStepper{
+        width: 150px;
+        height: 30px;
+    }
+    .HrtStepperItem{
+        height: 15px;
+        width: 15px;
+    }
+    .HrtStepperItem i{
+        display: none;
+    }
+    .HrtStepperBar{
+        width: 120px;
+        height: 5px;
+        background: white;
+        border-radius: 5px;
+      }
+    
+    .prevButton, .nextButton{
+        width: 60px;
+        height: 60px;
+    }
+    .nextButton{
+        transform: translate(20vh,35vh);
+    }
+  }
+
+    /* HrtStepper Mobile ends here */
+
 .resumeCreate_Body {
     margin: 2rem;
     /* pushing it down */
@@ -72,14 +160,14 @@
     color: #1090D9;
     /* border: 1px solid blueviolet; */
     box-sizing: border-box;
-    margin-top: -2rem;
+    margin-top: -3.5rem;
     /* background-color: green; */
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     /* background: #58B7EC; */
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.3), 5px 5px 10px rgba(0, 0, 0, 0.7);
     border-radius: 80px;

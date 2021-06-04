@@ -40,15 +40,34 @@ function ResumeCreate() {
         draggable: false,
     };
 
+    // progressBarSlide
+    // const move = (slide) => {
+    //     var i = 0;
+    //     for (; i < slide;  i++) { 
+    //         resumeCreate[i].style.background = "#1090D9"; 
+    //     }
     
+    //     if(slide!==6)
+    //         resumeCreate[i].style.background = "#ECECEC";
+            
+    //     var percent = (slide-1)*20;
+    //     progress.style.width = percent+"%";
+    // }
+
+
     const gotoNext = () => {
         sliderRef.current.slickNext();
-        setSlide(slide + 1)
+        setSlide(slide + 1);
+
+        // move(slide);
     }
 
     const gotoPrev = () => {
         sliderRef.current.slickPrev();
-        setSlide(slide - 1)
+        setSlide(slide - 1);
+
+        // move(slide);
+
     }
 
 
@@ -64,6 +83,29 @@ function ResumeCreate() {
                 <div className="resumeCreate_header">
                     <h1>Create Your Awesome Resume</h1>
                 </div>
+                {/* stepper */}
+                <div className="HrtStepper">
+                    <div className="HrtStepperItem">
+                        <i className="fas fa-paper-plane"></i>
+                    </div>
+                    <div className="HrtStepperItem">
+                        <i className="fas fa-user-tie"></i></div>
+                    <div className="HrtStepperItem">
+                        <i className="fas fa-briefcase"></i>
+                    </div>
+                    <div className="HrtStepperItem">
+                        <i className="fas fa-tools"></i>
+                    </div>
+                    <div className="HrtStepperItem">
+                        <i className="fas fa-phone-volume"></i>
+                    </div>
+                    <div className="HrtStepperItem">
+                        <i className="fas fa-paint-roller"></i></div> 
+                    <div className="HrtStepperBar">
+                        <div className="HrtStepperBarProgress"></div>
+                    </div>
+                </div>
+                {/* stepper */}
                 <div className="resumeCreate_Body">
                     <div className="resumeSlider">
                         <Slider {...settings} ref={sliderRef}>
