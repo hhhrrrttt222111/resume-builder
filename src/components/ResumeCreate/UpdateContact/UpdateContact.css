@@ -22,7 +22,9 @@
 }
 
 .contactFormContainer label{
-    margin-bottom: -.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: -0.5rem;
 }
 
 /* address label aligning */

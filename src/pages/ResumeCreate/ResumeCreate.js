@@ -67,6 +67,8 @@ function ResumeCreate() {
 
     console.log(resume)
 
+    const shadow =  '5px 5px 10px #000000ae, -5px -5px 10px #ddf0ed99';
+
     return (
         <div className="resumeCreate">
             <div className="resumeCreate_Container">
@@ -75,26 +77,26 @@ function ResumeCreate() {
                 </div>
                 {/* stepper */}
                 <div className="HrtStepper">
-                    <div className="HrtStepperItem" style={{background: slide >=1 ? '#1090D9' : '#ECECEC'}}>
+                    <div className="HrtStepperItem" style={{background: slide >=1 ? '#1090D9' : '#ECECEC',boxShadow: slide >=1 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-paper-plane"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=2 ? '#1090D9' : '#ECECEC'}}>
+                    <div className="HrtStepperItem" style={{background: slide >=2 ? '#1090D9' : '#ECECEC',boxShadow: slide >=2 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-user-tie"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=3 ? '#1090D9' : '#ECECEC'}}>
+                    <div className="HrtStepperItem" style={{background: slide >=3 ? '#1090D9' : '#ECECEC',boxShadow: slide >=3 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-briefcase"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=4 ? '#1090D9' : '#ECECEC'}}>
+                    <div className="HrtStepperItem" style={{background: slide >=4 ? '#1090D9' : '#ECECEC',boxShadow: slide >=4 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-tools"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=5 ? '#1090D9' : '#ECECEC'}}>
+                    <div className="HrtStepperItem" style={{background: slide >=5 ? '#1090D9' : '#ECECEC',boxShadow: slide >=5 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-phone-volume"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=6 ? '#1090D9' : '#ECECEC'}}>
+                    <div className="HrtStepperItem" style={{background: slide >=6 ? '#1090D9' : '#ECECEC',boxShadow: slide >=6 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-paint-roller"></i>
                     </div> 
                     <div className="HrtStepperBar">
-                        <div className="HrtStepperBarProgress" style={{width: setStepperWidth(slide)}}>
+                        <div className="HrtStepperBarProgress" style={{width: `${(slide-1)*20}%`}}>
 
                         </div>
                     </div>
@@ -134,7 +136,7 @@ function ResumeCreate() {
 
 
                     <Button onClick={generatePDF} className="generate_btn" style={{display: slide === 6 ? 'inline-block' : 'none'}}>
-                        Generate
+                        <span className="generateText">Generate</span>
                         <IoDocumentOutline className="generate_pdf"/>
                     </Button>
                 </div>
