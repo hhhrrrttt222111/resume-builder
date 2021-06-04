@@ -17,6 +17,7 @@
 
 .demo-card{
     margin: 2rem;
+    
 }
 
 .demo-card > .MuiCardContent-root{
@@ -33,15 +34,40 @@
 
 .democard-content > img{
     width: 350px;
-    height: 180px;
+    height: 225px;
 }
 
 .democard-content > h2{
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
 .democard-content > p{
     margin-bottom: 20px;
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .demo {
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    .demo{
+        height: fit-content;
+    }
+
+    .demo-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .democard-content > img{
+        height: 175px;
+        width: 100%;
+    }
 }
