@@ -17,6 +17,7 @@
 
 .demo-card{
     margin: 2rem;
+    max-width: 400px;
     
 }
 
@@ -64,6 +65,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .demo-card {
+        max-width: 350px;
     }
 
     .democard-content > img{

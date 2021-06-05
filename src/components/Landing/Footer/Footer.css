@@ -1,0 +1,12 @@
+.footer {
+    height: 40px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+}
