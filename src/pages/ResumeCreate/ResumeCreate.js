@@ -57,14 +57,6 @@ function ResumeCreate() {
         history.push(`/template/${template}`)
     }
 
-    const setStepperWidth = (sld) => {
-        if (sld === 6){
-            return '100%'
-        }
-        else {
-            return `${sld*20 - 20}%`
-        }
-    }
 
     console.log(resume)
 
