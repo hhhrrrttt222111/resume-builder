@@ -1,6 +1,7 @@
 .main {
     height: 100vh;
     position: relative;
+    background-color: #eeeae8;
 }
 
 .main  >  h1 {
@@ -11,6 +12,7 @@
     text-decoration: none;
     font-size: 3rem;
     font-family: 'Barlow', sans-serif; 
+    color: #1a1a1a;
 }
 
 
@@ -32,34 +34,39 @@
     justify-content: space-evenly;
     align-items: flex-start;
     margin: 2rem;
-    margin-left: 8rem;
+    margin-left: 14rem;
     flex: 0.4;
 }
 
 .main-description > h1{
     margin-bottom: 20px;
-    font-size: 3rem;
-    width: 80%;
+    font-size: 3.25rem;
+    width: 90%;
     font-family: 'Barlow', sans-serif; 
+    color: #1a1a1a;
+    line-height: 111%;
 }
 
 .main-description > p{
     font-size: 1.5rem;
-    
-    width: 80%;
+    color: #1a1a1a;
+    width: 90%;
     font-family: 'Barlow', sans-serif; 
 }
 
 .main-description > button, .main-description > button:hover {
     margin-top: 2rem;
    font-size: 18px;
-   padding: 0.7rem 2.1rem;
-   text-transform: inherit;
-   color: blue;
-   border: 1px solid green;
-   box-sizing: border-box;
-   border-radius: 12px;
-   background-color: greenyellow;
+   background: linear-gradient(89.89deg, #FE8C00 -42.1%, #F83600 21.73%, #FE8C00 90.46%);
+   border-radius: 70px;
+   padding: 0.5rem 1.5rem;
+   font-family: Nunito;
+    font-style: normal;
+    text-transform: inherit;
+    font-weight: bold;
+    text-align: center;
+    color: #393939;
+    text-shadow: -3px -3px 6px rgba(255, 255, 255, 0.2), 3px 3px 6px rgba(0, 0, 0, 0.5);
 
     
 }
@@ -116,8 +123,15 @@
         margin: 2rem;
     }
 
+
+
     .main-description > h1{
         font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .main-description > p{
+        width: 100%;
     }
     .img-container{
         flex: 1;
