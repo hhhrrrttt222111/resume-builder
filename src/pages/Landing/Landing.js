@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Main, Features, Demo } from '../../components'
+import { Main, Features, Demo, Footer } from '../../components'
 
 
 function Landing() {
@@ -11,6 +11,7 @@ function Landing() {
             <Main />
             <Features />
             <Demo />
+            <Footer />
         </div>
     )
 }
