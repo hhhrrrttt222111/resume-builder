@@ -38,7 +38,8 @@ function ResumeCreate() {
         loop: true,
         autoplaySpeed: 8000,
         draggable: false,
-        swipeToSlide: false
+        swipeToSlide: false,
+        swipe: false
     };
 
 
