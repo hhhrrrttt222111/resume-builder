@@ -12,6 +12,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://iamgayathrysuresh.web.app/"><img src="https://avatars.githubusercontent.com/u/62144916?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gayathry Suresh</b></sub></a><br /><a href="https://github.com/hhhrrrttt222111/resume-builder/commits?author=Gayathry17" title="Code">💻</a> <a href="#design-Gayathry17" title="Design">🎨</a> <a href="#content-Gayathry17" title="Content">🖋</a></td>
     <td align="center"><a href="https://hhhrrrttt222111.web.app/"><img src="https://avatars.githubusercontent.com/u/43471295?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hemanth R</b></sub></a><br /><a href="https://github.com/hhhrrrttt222111/resume-builder/commits?author=hhhrrrttt222111" title="Code">💻</a> <a href="#design-hhhrrrttt222111" title="Design">🎨</a> <a href="#maintenance-hhhrrrttt222111" title="Maintenance">🚧</a></td>
   </tr>
 </table>
