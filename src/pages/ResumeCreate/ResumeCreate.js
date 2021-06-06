@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Helmet from 'react-helmet'
 
 import { IoDocumentOutline } from "react-icons/io5";
 import {  FcPrevious, FcNext } from "react-icons/fc";
