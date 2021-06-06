@@ -54,21 +54,32 @@
     font-family: 'Barlow', sans-serif; 
 }
 
-.main-description > button, .main-description > button:hover {
+.main-description > button{
     margin-top: 2rem;
-   font-size: 18px;
-   background: linear-gradient(89.89deg, #FE8C00 -42.1%, #F83600 21.73%, #FE8C00 90.46%);
+   font-size: 25px;
+   background: linear-gradient(to right,#1090D9 50%,#041e91 100%);
+   background-size: 150% 150%;
+   background-position-x: 0%;
    border-radius: 70px;
-   padding: 0.5rem 1.5rem;
+   padding: 1rem 2.5rem;
    font-family: Nunito;
-    font-style: normal;
-    text-transform: inherit;
-    font-weight: bold;
-    text-align: center;
-    color: #393939;
-    text-shadow: -3px -3px 6px rgba(255, 255, 255, 0.2), 3px 3px 6px rgba(0, 0, 0, 0.5);
+   font-style: normal;
+   text-transform: inherit;
+   font-weight: bold;
+   text-align: center;
+   color: #2a2a2a;
+   transition: all 0.5s linear;
+   box-shadow: inset 3px 3px 6px #000000bc, inset 8px 8px 20px #00000030,
+   inset -3px -3px 6px #ffffff50, inset -8px -8px 20px #ffffff70;
+}
 
-    
+.main-description > button:hover{
+   color: #efefef;
+   background: linear-gradient(to right,#1090D9 0%,#041e91 100%);
+   background-position-x: 100%;
+   box-shadow: 3px 3px 6px #000000ac, 8px 8px 20px #00000030,
+   -3px -3px 6px #ffffffd0, -8px -8px 20px #ffffff70;
+
 }
 
 .img-container {
@@ -180,6 +191,22 @@
 
 @media screen and (max-width: 400px) {
 
+    .main-description > button{
+        margin-top: 2rem;
+       font-size: 1.3rem;
+       background: linear-gradient(45deg,#1090D9 50%,#041e91 90%);
+       border-radius: 70px;
+       padding: 0.75rem 2rem;
+       font-family: Nunito;
+       font-style: normal;
+       text-transform: inherit;
+       font-weight: bold;
+       text-align: center;
+       color: #efefef;
+       box-shadow: 3px 3px 6px #000000ac, 8px 8px 20px #00000030,
+       -3px -3px 6px #ffffffd0, -8px -8px 20px #ffffff70;
+    
+    }
 
 
 }
