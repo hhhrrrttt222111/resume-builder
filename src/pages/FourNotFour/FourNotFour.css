@@ -1,15 +1,22 @@
 .fnf {
     height: 100%;
-    background-color: lavender;
+    background-color: #020a25ea;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.fnf-imgcontainer {
+    padding: 2rem;
 }
 
 .fnf-imgcontainer > img {
     width: 500px;
     pointer-events: none;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
 .fnf-description {
@@ -17,22 +24,25 @@
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 2rem;
-    
+    padding: 2rem;
 }
 
 .fnf-description > h1{
     font-size: 7rem;
     margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    animation: heading 3s infinite; 
+    color: #dbd2d2;
 }
 
 .fnf-description > h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: #dbd2d2;
 }
 
-.fnf-description > p {
-    font-size: 1rem;
-}
+
 
 .fnf-description > button, .fnf-description > button:hover {
     margin-top: 2rem;
@@ -48,7 +58,6 @@
 
 @media screen and (max-width: 992px){
     .fnf {
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -60,7 +69,12 @@
     }
 
     .fnf-description {
-        margin-bottom: 20px  ;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 0;
     }
 
     .fnf-description > h1 {
@@ -71,3 +85,62 @@
         font-size: 2.5rem;
     }
 }
+
+@media screen and (max-width: 800px){
+    .fnf-imgcontainer > img{
+        width: 330px;
+    }
+    .fnf-description > h1{
+        font-size: 5rem;
+        margin-bottom: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .fnf-description > h2 {
+        font-size: 2rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fnf-imgcontainer > img{
+        width: 100%;
+    }
+}
+
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+
+@keyframes heading {
+    0% {
+       animation-timing-function: cubic-bezier(.22,.88,.44,1);
+       opacity: 0.2;
+       transform: translateY(100vh) scale(0.8,0.8) rotateZ(-20deg) rotateX(10deg);
+    }
+    
+    30%,
+    50% {
+       animation-timing-function: cubic-bezier(.88,0,1,.44);
+       opacity: 1;
+       transform: translateY(0%) scale(1,1);
+    }
+    
+    100% {
+       transform: translateY(-100vh) rotateZ(20deg) rotateX(10deg);
+    }
+ }
+ 

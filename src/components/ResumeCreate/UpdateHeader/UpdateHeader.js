@@ -61,7 +61,7 @@ function UpdateHeader() {
                             <label className="headerLabelName">Type Your Name</label>
                             <input 
                                 type="text" 
-                                placeholder="Eg. John Britto" 
+                                placeholder="Eg. John Walker" 
                                 {...register("name")} 
                                 name="name"
                                 onChange={handleSubmit(onSubmit)}
@@ -70,7 +70,7 @@ function UpdateHeader() {
                             <label className="headerLabelTitle">Type Your Title</label>
                             <input 
                                 type="text" 
-                                placeholder="Eg. Sales Executive" 
+                                placeholder="Eg. Frontent Developer" 
                                 {...register("title")} 
                                 name="title"
                                 onChange={handleSubmit(onSubmit)}
@@ -82,7 +82,7 @@ function UpdateHeader() {
                         <label className="headerLabelBio">Your Bio</label>
                         <textarea 
                             type="text" 
-                            placeholder="I am currently working at...." 
+                            placeholder="I am John Walker..." 
                             {...register("bio")} 
                             name="bio"
                             onChange={handleSubmit(onSubmit)}

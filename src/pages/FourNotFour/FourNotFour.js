@@ -4,6 +4,7 @@ import './FourNotFour.css';
 import fof from '../../assets/images/svg/f0f.svg'
 import { Button } from '@material-ui/core';
 import { useHistory } from "react-router-dom";
+import Helmet from 'react-helmet'
 
 function FourNotFour() {
     let history = useHistory();
@@ -13,13 +14,15 @@ function FourNotFour() {
       }
     return (
         <div className="fnf">
+            <Helmet>
+                <title>Oops!404</title>
+            </Helmet>
             <div className="fnf-imgcontainer">
                 <img src={fof} alt=""/>
             </div>
             <div className="fnf-description">
                 <h1>404</h1>
                 <h2>UH OH! You're lost.</h2>
-                <p>The page you are looking for does not exist. How you got here is a mystery.<br/>But you can click the button below to go back to homepage</p>
                 <Button onClick={handleClick1}>Home</Button>
             </div>
         </div>

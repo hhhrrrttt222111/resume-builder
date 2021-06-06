@@ -1,5 +1,6 @@
 import React, { useRef, useState, useContext } from 'react'
-import { Button } from '@material-ui/core';
+import { Button, Tooltip } from '@material-ui/core';
+import Zoom from '@material-ui/core/Zoom';
 import { useHistory } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -29,6 +30,7 @@ function ResumeCreate() {
 
     const settings = {
         dots: false,
+        adaptiveHeight: true,
         infinite: false,
         speed: 800,
         arrows: false,
@@ -40,7 +42,7 @@ function ResumeCreate() {
         autoplaySpeed: 8000,
         draggable: false,
         swipeToSlide: false,
-        swipe: false
+        swipe: false,
     };
 
 
@@ -72,30 +74,46 @@ function ResumeCreate() {
 
     return (
         <div className="resumeCreate">
+            <Helmet>
+                <title>Create your Resume</title>
+            </Helmet>
             <div className="resumeCreate_Container">
                 <div className="resumeCreate_header">
                     <h1>Create Your Awesome Resume</h1>
                 </div>
                 {/* stepper */}
                 <div className="HrtStepper">
-                    <div onClick={() => goToSlide(0)} className="HrtStepperItem" style={{background: slide >=1 ? '#1090D9' : '#ECECEC',boxShadow: slide >=1 ? `${shadow}` : 'none'}}>
-                        <i className="fas fa-paper-plane"></i>
-                    </div>
-                    <div onClick={() => goToSlide(1)} className="HrtStepperItem" style={{background: slide >=2 ? '#1090D9' : '#ECECEC',boxShadow: slide >=2 ? `${shadow}` : 'none'}}>
-                        <i className="fas fa-user-tie"></i>
-                    </div>
-                    <div onClick={() => goToSlide(2)} className="HrtStepperItem" style={{background: slide >=3 ? '#1090D9' : '#ECECEC',boxShadow: slide >=3 ? `${shadow}` : 'none'}}>
-                        <i className="fas fa-briefcase"></i>
-                    </div>
-                    <div onClick={() => goToSlide(3)} className="HrtStepperItem" style={{background: slide >=4 ? '#1090D9' : '#ECECEC',boxShadow: slide >=4 ? `${shadow}` : 'none'}}>
-                        <i className="fas fa-tools"></i>
-                    </div>
-                    <div onClick={() => goToSlide(4)} className="HrtStepperItem" style={{background: slide >=5 ? '#1090D9' : '#ECECEC',boxShadow: slide >=5 ? `${shadow}` : 'none'}}>
-                        <i className="fas fa-phone-volume"></i>
-                    </div>
-                    <div onClick={() => goToSlide(5)} className="HrtStepperItem" style={{background: slide >=6 ? '#1090D9' : '#ECECEC',boxShadow: slide >=6 ? `${shadow}` : 'none'}}>
-                        <i className="fas fa-paint-roller"></i>
-                    </div> 
+                    <Tooltip TransitionComponent={Zoom} title="Choose Templates">
+                        <div onClick={() => goToSlide(0)} className="HrtStepperItem" style={{background: slide >=1 ? '#1090D9' : '#ECECEC',boxShadow: slide >=1 ? `${shadow}` : 'none'}}>
+                            <i className="fas fa-paper-plane"></i>
+                        </div>
+                    </Tooltip>
+                    <Tooltip TransitionComponent={Zoom} title="About You">
+                        <div onClick={() => goToSlide(1)} className="HrtStepperItem" style={{background: slide >=2 ? '#1090D9' : '#ECECEC',boxShadow: slide >=2 ? `${shadow}` : 'none'}}>
+                            <i className="fas fa-user-tie"></i>
+                        </div>
+                    </Tooltip>
+                    <Tooltip TransitionComponent={Zoom} title="Education and Experience">
+                        <div onClick={() => goToSlide(2)} className="HrtStepperItem" style={{background: slide >=3 ? '#1090D9' : '#ECECEC',boxShadow: slide >=3 ? `${shadow}` : 'none'}}>
+                            <i className="fas fa-briefcase"></i>
+                        </div>
+                    </Tooltip>
+                    <Tooltip TransitionComponent={Zoom} title="Skills and Interests">
+                        <div onClick={() => goToSlide(3)} className="HrtStepperItem" style={{background: slide >=4 ? '#1090D9' : '#ECECEC',boxShadow: slide >=4 ? `${shadow}` : 'none'}}>
+                            <i className="fas fa-tools"></i>
+                        </div>
+                    </Tooltip>
+                    <Tooltip TransitionComponent={Zoom} title="Contact Details">
+                        <div onClick={() => goToSlide(4)} className="HrtStepperItem" style={{background: slide >=5 ? '#1090D9' : '#ECECEC',boxShadow: slide >=5 ? `${shadow}` : 'none'}}>
+                            <i className="fas fa-phone-volume"></i>
+                        </div>
+                    </Tooltip>
+                    <Tooltip TransitionComponent={Zoom} title="Choose Theme">
+                        <div onClick={() => goToSlide(5)} className="HrtStepperItem" style={{background: slide >=6 ? '#1090D9' : '#ECECEC',boxShadow: slide >=6 ? `${shadow}` : 'none'}}>
+                            <i className="fas fa-paint-roller"></i>
+                        </div> 
+                    </Tooltip>
+
                     <div className="HrtStepperBar">
                         <div className="HrtStepperBarProgress" style={{width: `${(slide-1)*20}%`}}>
 
