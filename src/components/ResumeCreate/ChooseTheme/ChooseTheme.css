@@ -82,7 +82,24 @@
 }
 
 @media screen and (max-width: 600px) {
+    .chooseTheme > h1 {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: -1rem;
+        text-align: center;
+    }
+    .choosePrimaryTheme, .chooseSecondaryTheme {
+        width: 80%;
+        margin-left: 5%;
+        text-align: center;
+        transform: scale(0.95);
+    }
+}
 
+@media screen and (max-width: 500px) {
+    .choosePrimaryTheme, .chooseSecondaryTheme {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (max-width: 400px) {
