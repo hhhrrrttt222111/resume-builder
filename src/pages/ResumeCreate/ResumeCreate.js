@@ -28,6 +28,7 @@ function ResumeCreate() {
 
     const settings = {
         dots: false,
+        adaptiveHeight: true,
         infinite: false,
         speed: 800,
         arrows: false,
@@ -39,7 +40,7 @@ function ResumeCreate() {
         autoplaySpeed: 8000,
         draggable: false,
         swipeToSlide: false,
-        swipe: false
+        swipe: false,
     };
 
 
