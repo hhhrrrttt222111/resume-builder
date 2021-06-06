@@ -23,16 +23,15 @@
 .fnf-description > h1{
     font-size: 7rem;
     margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .fnf-description > h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.fnf-description > p {
-    font-size: 1rem;
-}
+
 
 .fnf-description > button, .fnf-description > button:hover {
     margin-top: 2rem;
@@ -60,7 +59,12 @@
     }
 
     .fnf-description {
-        margin-bottom: 20px  ;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 0px;
     }
 
     .fnf-description > h1 {
@@ -69,5 +73,11 @@
 
     .fnf-description > h2 {
         font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .fnf-imgcontainer > img{
+        width: 100%;
     }
 }

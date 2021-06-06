@@ -58,7 +58,7 @@ function SkillInterest() {
                                         name="interest3"
                                         onChange={handleSubmit(onInterestSubmit)}
                                         className="input__se"
-                                        placeholder="e.g. Movies" 
+                                        placeholder="e.g. Watching Movies" 
                                     />
                                     <input 
                                         type="text" 
@@ -66,7 +66,7 @@ function SkillInterest() {
                                         name="interest4"
                                         onChange={handleSubmit(onInterestSubmit)}
                                         className="input__se"
-                                        placeholder="e.g. Photoshop" 
+                                        placeholder="e.g. Listening to music" 
                                     />
                                     <input 
                                         type="text" 
@@ -74,7 +74,7 @@ function SkillInterest() {
                                         name="interest5"
                                         onChange={handleSubmit(onInterestSubmit)}
                                         className="input__se"
-                                        placeholder="e.g. Java" 
+                                        placeholder="e.g. Dancing" 
                                     />
                                 </div>
                             </AccordionDetails>

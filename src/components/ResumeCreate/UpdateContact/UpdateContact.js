@@ -26,7 +26,7 @@ function UpdateContact() {
                         <label className="contactLabelPhone">Phone</label>
                         <input 
                             type="text" 
-                            placeholder="Eg. 222111333" 
+                            placeholder="Eg. +919845361309" 
                             {...register("phone")} 
                             name="phone"
                             // onChange={handleSubmit(onSubmit)}
@@ -37,7 +37,7 @@ function UpdateContact() {
                         <label className="contactLabelEmail">Email</label>
                         <input 
                             type="text" 
-                            placeholder="Eg. abcxyz@something.com" 
+                            placeholder="Eg. abcxyz@gmail.com" 
                             {...register("email")} 
                             name="email"
                             // onChange={handleSubmit(onSubmit)}

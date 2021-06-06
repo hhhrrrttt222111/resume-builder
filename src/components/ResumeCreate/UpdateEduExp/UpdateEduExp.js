@@ -37,7 +37,7 @@ function UpdateEduExp() {
                             <div>
                                 <input 
                                     type="text" 
-                                    placeholder="School" 
+                                    placeholder="Eg. Cambridge" 
                                     {...register("school1")} 
                                     name="school1"
                                     onChange={handleSubmit(onSubmit)}
@@ -45,7 +45,7 @@ function UpdateEduExp() {
                                 />
                                 <input 
                                     type="text" 
-                                    placeholder="Degree" 
+                                    placeholder="Eg. Higher Secondary Education" 
                                     {...register("degree1")} 
                                     name="degree1"
                                     onChange={handleSubmit(onSubmit)}
@@ -53,7 +53,7 @@ function UpdateEduExp() {
                                 />
                                 <input 
                                     type="text" 
-                                    placeholder="Year"
+                                    placeholder="Eg. 2010 - 2015"
                                     {...register("edyear1")} 
                                     name="edyear1"
                                     onChange={handleSubmit(onSubmit)}
@@ -70,7 +70,7 @@ function UpdateEduExp() {
                             <div>
                                 <input 
                                     type="text" 
-                                    placeholder="School" 
+                                    placeholder="Eg. Cambridge" 
                                     {...register("school2")} 
                                     name="school2"
                                     onChange={handleSubmit(onSubmit)}
@@ -78,7 +78,7 @@ function UpdateEduExp() {
                                 />
                                 <input 
                                     type="text" 
-                                    placeholder="Degree" 
+                                    placeholder="Eg. Higher Secondary Education" 
                                     {...register("degree2")} 
                                     name="degree2"
                                     onChange={handleSubmit(onSubmit)}
@@ -86,7 +86,7 @@ function UpdateEduExp() {
                                 />
                                 <input 
                                     type="text" 
-                                    placeholder="Year"
+                                    placeholder="Eg. 2010 - 2015"
                                     {...register("edyear2")} 
                                     name="edyear2"
                                     onChange={handleSubmit(onSubmit)}
@@ -103,7 +103,7 @@ function UpdateEduExp() {
                             <div>
                                 <input 
                                     type="text" 
-                                    placeholder="School" 
+                                    placeholder="Eg. Cambridge" 
                                     {...register("school3")} 
                                     name="school3"
                                     onChange={handleSubmit(onSubmit)}
@@ -111,7 +111,7 @@ function UpdateEduExp() {
                                 />
                                 <input 
                                     type="text" 
-                                    placeholder="Degree" 
+                                    placeholder="Eg. Higher Secondary Education" 
                                     {...register("degree3")} 
                                     name="degree3"
                                     onChange={handleSubmit(onSubmit)}
@@ -119,7 +119,7 @@ function UpdateEduExp() {
                                 />
                                 <input 
                                     type="text" 
-                                    placeholder="Year"
+                                    placeholder="Eg. 2010 - 2015"
                                     {...register("edyear3")} 
                                     name="edyear3"
                                     onChange={handleSubmit(onSubmit)}
@@ -143,7 +143,7 @@ function UpdateEduExp() {
                             <div>
                                 <input 
                                     type="text" 
-                                    placeholder="Company" 
+                                    placeholder="Eg. Bosch" 
                                     {...register("company1")} 
                                     name="company1"
                                     onChange={handleSubmit(onSubmit)}
@@ -151,7 +151,7 @@ function UpdateEduExp() {
                                 />
                                 <input 
                                     type="text" 
-                                    placeholder="Title" 
+                                    placeholder="Eg. Backend Developer" 
                                     {...register("job1")} 
                                     name="job1"
                                     onChange={handleSubmit(onSubmit)}
@@ -159,7 +159,7 @@ function UpdateEduExp() {
                                 />
                                 <input 
                                     type="text" 
-                                    placeholder="Year"
+                                    placeholder="Eg. 2019 - 2024"
                                     {...register("exyear1")} 
                                     name="exyear1"
                                     onChange={handleSubmit(onSubmit)}
