@@ -45,7 +45,7 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
