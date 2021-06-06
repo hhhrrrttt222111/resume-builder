@@ -1,6 +1,6 @@
 .features {
     height: 100vh;
-    background-color: lightcoral;
+    background-color: #1b1919;
     
 }
 
@@ -8,7 +8,7 @@
     padding-top: 5rem;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
   
@@ -32,11 +32,13 @@
     margin-bottom: 20px;
     font-size: 3rem;
     font-family: 'Barlow', sans-serif; 
+    color: #fff;
 }
 
 .features-text>p{
     font-size: 1.5rem;
     font-weight: 400;
+    color: grey;
     font-family: 'Barlow', sans-serif; 
 }
 .features-img{
@@ -114,4 +116,9 @@
       justify-content: space-evenly;
       align-items: flex-start;
     }
+
+    .features-img > img{
+        width: 100%;
+    }
+      
 }
