@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "hhhrrrttt222111",
+      "name": "Hemanth R",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43471295?v=4",
+      "profile": "https://hhhrrrttt222111.web.app/",
+      "contributions": [
+        "code",
+        "design",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "resume-builder",
+  "projectOwner": "hhhrrrttt222111",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
