@@ -30,14 +30,14 @@ function ChooseTheme() {
             <div className="themeFormContainer">
                 <div className="themeForm">
                     <div className="choosePrimaryTheme" style={{background: primary}}>
-                        <h3>Choose Header Color</h3>
+                        <h3>Choose Header Background</h3>
                         <SketchPicker 
                             color={primary}
                             onChangeComplete={targetColor => setPrimary(targetColor.hex)}
                         />
                     </div>
                     <div className="chooseSecondaryTheme" style={{background: secondary}}>
-                        <h3>Choose Page Color</h3>
+                        <h3>Choose Page Background</h3>
                         <SketchPicker 
                             color={secondary}
                             onChangeComplete={targetColor => setSecondary(targetColor.hex)}
