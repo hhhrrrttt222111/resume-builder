@@ -97,6 +97,13 @@
 
 }
 
+.MuiTooltip-tooltip{
+    background-color: #1090D9 !important;
+    color: #063A57 !important;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+}
+
 .slick-slider {
     height: 100% !important;
 }
