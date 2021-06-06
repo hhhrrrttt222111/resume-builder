@@ -14,9 +14,9 @@
         "code",
         "design",
         "content"
-        ]
-       },
-       {
+      ]
+    },
+    {
       "login": "hhhrrrttt222111",
       "name": "Hemanth R",
       "avatar_url": "https://avatars.githubusercontent.com/u/43471295?v=4",
@@ -25,6 +25,16 @@
         "code",
         "design",
         "maintenance"
+      ]
+    },
+    {
+      "login": "ShimilSAbraham",
+      "name": "Shimil Shaji Abraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62107737?v=4",
+      "profile": "https://github.com/ShimilSAbraham",
+      "contributions": [
+        "code",
+        "design"
       ]
     }
   ],
