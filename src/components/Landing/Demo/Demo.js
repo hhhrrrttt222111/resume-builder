@@ -5,9 +5,15 @@ import Fade from 'react-reveal/Fade';
 
 import './Demo.css';
 
-import demo1 from '../../../assets/images/png/demo1.png';
-import demo2 from '../../../assets/images/png/demo2.png';
-import demo3 from '../../../assets/images/png/demo3.png';
+// import card1Opened from '../../../assets/images/svg/card1_opened.svg';
+// import card2Opened from '../../../assets/images/svg/card2_opened.svg';
+// import card3Opened from '../../../assets/images/svg/card3_opened.svg';
+
+// import card1Closed from '../../../assets/images/svg/card1_closed.svg';
+// import card2Closed from '../../../assets/images/svg/card2_closed.svg';
+// import card3Closed from '../../../assets/images/svg/card3_closed.svg';
+
+
 
 function Demo() {
     return (
@@ -17,9 +23,13 @@ function Demo() {
                     <Card className="demo-card" elevation={10}>
                         <CardContent>
                             <div className="democard-content">
-                                <img src={demo1} alt=""/>
-                                <h2>Pick a CV template.</h2>
-                                <p>Choose a sleek design and layout to get started.</p>
+                                <div className="cardTop">
+                                    <div className="demoCardImg1"></div>
+                                    <h2 className="demoCardHead1">Read</h2>
+                                </div>
+                                <div className="cardBottom">
+                                    <p>Choose a sleek design and layout to get started.</p>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>
@@ -27,10 +37,14 @@ function Demo() {
                 <Fade bottom>
                     <Card className="demo-card" elevation={10}>
                         <CardContent>
-                            <div className="democard-content">
-                            <img src={demo2} alt=""/>
-                                <h2>Pick a CV template.</h2>
-                                <p>Choose a sleek design and layout to get started.</p>
+                        <div className="democard-content">
+                                <div className="cardTop">
+                                    <div className="demoCardImg2"></div>
+                                    <h2 className="demoCardHead2">Code</h2>
+                                </div>
+                                <div className="cardBottom">
+                                    <p>Choose a sleek design and layout to get started.</p>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>
@@ -38,11 +52,14 @@ function Demo() {
                 <Fade right>
                     <Card className="demo-card" elevation={10}>
                         <CardContent>
-                            <div className="democard-content">
-                                <img src=
-                                {demo3} alt=""/>
-                                <h2>Pick a CV template.</h2>
-                                <p>Choose a sleek design and layout to get started.</p>
+                        <div className="democard-content">
+                                <div className="cardTop">
+                                    <div className="demoCardImg3"></div>
+                                    <h2  className="demoCardHead3">Store</h2>
+                                </div>
+                                <div className="cardBottom">
+                                    <p>Choose a sleek design and layout to get started.</p>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>

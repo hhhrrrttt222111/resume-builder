@@ -1,6 +1,6 @@
 .demo {
     height: 100vh;
-    background-color: hotpink;
+    background-color: #efefef;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,10 +15,19 @@
     align-items: center;
 }
 
+
 .demo-card{
     margin: 2rem;
     max-width: 400px;
-    
+    height: 225px;
+    background: #efefef !important;
+    box-shadow: 5px 5px 10px #000000dd, 10px 10px 20px #00000050, -5px -5px 10px #ffffffde, -10px -10px 20px #ffffff60 !important;
+    transition: 0.8s ease !important;
+}
+
+.demo-card:hover{
+    height: 450px;
+    box-shadow: inset 5px -5px 10px #0000007d, inset -5px -5px 10px #ffffffde, inset -10px -10px 20px #ffffff60 !important;
 }
 
 .demo-card > .MuiCardContent-root{
@@ -30,29 +39,97 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    max-width: 400px;
+    height: 450px;
+    font-family: 'Monteserrat', sans-serif;
+}
+.democard-content .cardTop{
+    width: 100%;
+    height: 50%;
+    /* background: orange; */
+}
+.demoCardImg1, .demoCardImg2, .demoCardImg3{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/images/svg/card1_closed.svg');
+    background-position: center;
+    transition: 0.5s ease;
+}
+.demoCardImg2{
+    background-image: url('../../../assets/images/svg/card2_closed.svg');
+}
+.demoCardImg3{
+    background-image: url('../../../assets/images/svg/card3_closed.svg');
+}
+.demo-card:hover .demoCardImg1{
+    background-image: url('../../../assets/images/svg/card1_opened.svg');
+}
+.demo-card:hover .demoCardImg2{
+    background-image: url('../../../assets/images/svg/card2_opened.svg');
+}
+.demo-card:hover .demoCardImg3{
+    background-image: url('../../../assets/images/svg/card3_opened.svg');
 }
 
-.democard-content > img{
-    width: 350px;
-    height: 225px;
+.democard-content .cardBottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
 }
 
-.democard-content > h2{
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+.democard-content h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -8%;
+    transition: 0.5s ease;
+    font-family: 'Monteserrat', sans-serif;
+    color: #383A48;
+    opacity: 0.8;
 }
 
-.democard-content > p{
+.demo-card:hover .cardTop h2{
+    margin-top: 5%;
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.demo-card:hover .demoCardHead1{
+    color: #d6bb0c;
+}
+.demo-card:hover .demoCardHead2{
+    color: #ff2e8c;
+}
+.demo-card:hover .demoCardHead3{
+    color: #1f6aff;
+}
+
+.cardBottom p{
     margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+    font-size: 1.1rem;
 }
 
-@media (min-width: 992px) and (max-width: 1380px) {
-    .demo {
-        height: 100%;
+
+
+
+
+
+
+
+
+@media (min-width: 1300px) {
+    .demo-grid{
+        height: 80vh;
+        position: static;
     }
-    
+    .demo-card {
+        height: 240px;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -74,5 +151,31 @@
     .democard-content > img{
         height: 175px;
         width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    .democard-content .cardTop > div{
+        background-size: 120%;
+        background-repeat: no-repeat;
+    }
+    .democard-content .cardTop > div:hover{
+        margin-top: -12%;
+    }
+    .democard-content h2{
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0%;
+        transition: 0.5s ease;
+        font-family: 'Monteserrat', sans-serif;
+        color: #383A48;
+        opacity: 0.8;
+    }
+    
+    .demo-card:hover .cardTop h2{
+        margin-top: 5%;
+        opacity: 1;
+        font-size: 2rem;
     }
 }
