@@ -56,12 +56,12 @@
 
 .main-description > button{
     margin-top: 2rem;
-   font-size: 25px;
+   font-size: 18px;
    background: linear-gradient(to right,#1090D9 50%,#041e91 100%);
    background-size: 150% 150%;
    background-position-x: 0%;
    border-radius: 70px;
-   padding: 1rem 2.5rem;
+   padding: 0.7rem 2rem;
    font-family: Nunito;
    font-style: normal;
    text-transform: inherit;
