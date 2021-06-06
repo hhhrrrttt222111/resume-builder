@@ -38,6 +38,7 @@ function ResumeCreate() {
         loop: true,
         autoplaySpeed: 8000,
         draggable: false,
+        swipeToSlide: false
     };
 
 
@@ -57,6 +58,11 @@ function ResumeCreate() {
         history.push(`/template/${template}`)
     }
 
+    const goToSlide = (sld) => {
+        sliderRef.current.slickGoTo(sld);
+        setSlide(sld + 1)
+    }
+
 
     console.log(resume)
 
@@ -70,22 +76,22 @@ function ResumeCreate() {
                 </div>
                 {/* stepper */}
                 <div className="HrtStepper">
-                    <div className="HrtStepperItem" style={{background: slide >=1 ? '#1090D9' : '#ECECEC',boxShadow: slide >=1 ? `${shadow}` : 'none'}}>
+                    <div onClick={() => goToSlide(0)} className="HrtStepperItem" style={{background: slide >=1 ? '#1090D9' : '#ECECEC',boxShadow: slide >=1 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-paper-plane"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=2 ? '#1090D9' : '#ECECEC',boxShadow: slide >=2 ? `${shadow}` : 'none'}}>
+                    <div onClick={() => goToSlide(1)} className="HrtStepperItem" style={{background: slide >=2 ? '#1090D9' : '#ECECEC',boxShadow: slide >=2 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-user-tie"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=3 ? '#1090D9' : '#ECECEC',boxShadow: slide >=3 ? `${shadow}` : 'none'}}>
+                    <div onClick={() => goToSlide(2)} className="HrtStepperItem" style={{background: slide >=3 ? '#1090D9' : '#ECECEC',boxShadow: slide >=3 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-briefcase"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=4 ? '#1090D9' : '#ECECEC',boxShadow: slide >=4 ? `${shadow}` : 'none'}}>
+                    <div onClick={() => goToSlide(3)} className="HrtStepperItem" style={{background: slide >=4 ? '#1090D9' : '#ECECEC',boxShadow: slide >=4 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-tools"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=5 ? '#1090D9' : '#ECECEC',boxShadow: slide >=5 ? `${shadow}` : 'none'}}>
+                    <div onClick={() => goToSlide(4)} className="HrtStepperItem" style={{background: slide >=5 ? '#1090D9' : '#ECECEC',boxShadow: slide >=5 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-phone-volume"></i>
                     </div>
-                    <div className="HrtStepperItem" style={{background: slide >=6 ? '#1090D9' : '#ECECEC',boxShadow: slide >=6 ? `${shadow}` : 'none'}}>
+                    <div onClick={() => goToSlide(5)} className="HrtStepperItem" style={{background: slide >=6 ? '#1090D9' : '#ECECEC',boxShadow: slide >=6 ? `${shadow}` : 'none'}}>
                         <i className="fas fa-paint-roller"></i>
                     </div> 
                     <div className="HrtStepperBar">
