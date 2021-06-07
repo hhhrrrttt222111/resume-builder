@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { GrGithub } from "react-icons/gr";
+
 import './Footer.css'
 
 function Footer() {
@@ -8,6 +10,10 @@ function Footer() {
     return (
         <div className="footer">
             <p>Copyright © {year} | Portfolio Maker</p>
+            <a href="https://github.com/hhhrrrttt222111/resume-builder" target="_blank" rel="noreferrer">
+                <GrGithub className="github"/>
+            </a>
+
         </div>
     )
 }

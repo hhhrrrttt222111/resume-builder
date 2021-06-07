@@ -4,10 +4,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .footer > p{
     font-family: 'Monteserrat', sans-serif;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.footer > a {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+.footer > a > .github {
+    font-size: 1.96rem;
+    color: #1b1919;
+    padding: 0.5rem;
+
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer > a {
+        position: absolute;
+        right: 5px;
+        bottom: 1px;
+    }
+    .footer > a > .github {
+        font-size: 1.75rem;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    .footer > p{
+        font-family: 'Monteserrat', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
 }

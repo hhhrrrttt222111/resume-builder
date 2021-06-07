@@ -175,16 +175,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .main{
-
-    }
     .main-container{
         padding-top: 4rem;
       
-    }
-
-    .main-description{
-        
     }
 
 }
