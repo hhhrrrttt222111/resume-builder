@@ -30,7 +30,7 @@ function SkillInterest() {
             <div className="skillInterestContainer">
                 <form noValidate autoComplete="off" onSubmit={handleSubmit(onInterestSubmit)} className="interestForm">
                     <div className="interestFormContent">
-                        <Accordion defaultExpanded={true}>
+                        <Accordion defaultExpanded={window.innerWidth > 500 ? true : false}>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
                                 <h4>Add Interests</h4>
                             </AccordionSummary>
@@ -85,7 +85,7 @@ function SkillInterest() {
 
                 <form noValidate autoComplete="off" onSubmit={handleSubmit(onSkillSubmit)} className="skillForm">
                     <div className="skillFormContent">
-                        <Accordion>
+                        <Accordion defaultExpanded={window.innerWidth <= 500 ? true : false}>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
                                 <h4>Add Skills</h4>
                             </AccordionSummary>

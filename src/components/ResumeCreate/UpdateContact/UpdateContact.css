@@ -88,9 +88,29 @@
     text-transform: inherit;
     box-sizing: border-box;
     
-    margin-left: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     color: #ddf0ed;
     background: #1090D9;
     box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.55), 3px 3px 6px rgba(0, 0, 0, 0.55);
     border-radius: 40px;
+}
+
+@media (max-width:700px){
+    .updateContact > h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .contactFormContainer {
+        width: 90%;
+        /* margin-left: 3%;    */
+    }
+    .input_add{
+        min-height: 7rem;
+    }
+}
+@media (max-width:500px){
+    .updateContact > h1 {
+        font-size: 2.3rem;
+    }
 }

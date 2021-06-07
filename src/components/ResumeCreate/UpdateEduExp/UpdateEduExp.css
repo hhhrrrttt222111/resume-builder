@@ -4,7 +4,6 @@
     align-items: center;
     padding: 1rem;
     overflow: hidden;
-
     color: #03263a;
 }
 
@@ -59,7 +58,8 @@
     text-transform: inherit;
     box-sizing: border-box;
     
-    margin-left: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     color: #ddf0ed;
     background: #1090D9;
     box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.55), 3px 3px 6px rgba(0, 0, 0, 0.55);
@@ -72,3 +72,18 @@
     .MuiPaper-root {
         background:rgba(6, 59, 90, 0.56) !important;
 }
+
+
+@media (max-width:600px){
+        .updateEduExp > h1 {
+            font-size: 2.8rem;
+            text-align: center;
+        }
+}
+@media (max-width:500px){
+        .updateEduExp > h1 {
+            font-size: 2.3rem;
+            text-align: center;
+        }
+}
+    
