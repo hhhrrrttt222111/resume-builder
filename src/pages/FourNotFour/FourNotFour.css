@@ -7,18 +7,18 @@
     align-items: center;
     overflow: hidden;
 }
-
+ 
 .fnf-imgcontainer {
     padding: 2rem;
 }
-
+ 
 .fnf-imgcontainer > img {
     width: 500px;
     pointer-events: none;
     transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 }
-
+ 
 .fnf-description {
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     margin-left: 2rem;
     padding: 2rem;
 }
-
+ 
 .fnf-description > h1{
     font-size: 7rem;
     margin-bottom: 20px;
@@ -34,16 +34,16 @@
     animation: heading 3s infinite; 
     color: #ac3b73;
 }
-
+ 
 .fnf-description > h2 {
     font-size: 3rem;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     color: #ac3b73;
 }
-
-
-
+ 
+ 
+ 
 .fnf-description > button, .fnf-description > button:hover {
     margin-top: 2rem;
     font-size: 18px;
@@ -59,7 +59,7 @@
    font-family: Nunito;
    width: 7rem;
 }
-
+ 
 @media screen and (max-width: 992px){
     .fnf {
         display: flex;
@@ -67,11 +67,11 @@
         justify-content: center;
         align-items: center;
     }
-
+ 
     .fnf-imgcontainer > img {
         width: 350px;
     }
-
+ 
     .fnf-description {
         margin-bottom: 20px;
         display: flex;
@@ -80,16 +80,16 @@
         align-items: center;
         margin-left: 0;
     }
-
+ 
     .fnf-description > h1 {
         font-size: 4rem;
     }
-
+ 
     .fnf-description > h2 {
         font-size: 2.5rem;
     }
 }
-
+ 
 @media screen and (max-width: 800px){
     .fnf-imgcontainer > img{
         width: 330px;
@@ -99,22 +99,22 @@
         margin-bottom: 20px;
         font-family: 'Roboto Condensed', sans-serif;
     }
-    
+ 
     .fnf-description > h2 {
         font-size: 2rem;
         font-family: 'Source Sans Pro', sans-serif;
         text-align: center;
     }
 }
-
+ 
 @media screen and (max-width: 600px){
     .fnf-imgcontainer > img{
         width: 100%;
     }
 }
-
-
-
+ 
+ 
+ 
 @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -126,23 +126,23 @@
 		transform: translatey(0px);
 	}
 }
-
-
-
+ 
+ 
+ 
 @keyframes heading {
     0% {
        animation-timing-function: cubic-bezier(.22,.88,.44,1);
        opacity: 0.2;
        transform: translateY(100vh) scale(0.8,0.8) rotateZ(-20deg) rotateX(10deg);
     }
-    
+ 
     30%,
     50% {
        animation-timing-function: cubic-bezier(.88,0,1,.44);
        opacity: 1;
        transform: translateY(0%) scale(1,1);
     }
-    
+ 
     100% {
        transform: translateY(-100vh) rotateZ(20deg) rotateX(10deg);
     }
