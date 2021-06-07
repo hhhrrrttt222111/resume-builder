@@ -4,7 +4,6 @@
     align-items: center;
     padding: 1rem;
     overflow: hidden;
-
     color: #03263a;
 }
 
@@ -83,7 +82,7 @@
 }
 @media (max-width:500px){
         .updateEduExp > h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             text-align: center;
         }
 }
