@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { useForm } from "react-hook-form";
-import { Button } from '@material-ui/core';
+import { Button, Tooltip } from '@material-ui/core';
+import Zoom from '@material-ui/core/Zoom';
 
 import './UpdateHeader.css'
 import { DetailsContext } from '../../../contexts/DetailsContext'
@@ -47,15 +48,17 @@ function UpdateHeader() {
                 <form noValidate autoComplete="off" onSubmit={handleSubmit(onSubmit)} className="headerForm">
                     <div className="headerFormOne">
                         <div className="headerFormOneLeft">
-                            <div style={{background: image? `url("${image}") no-repeat center/cover`: `url(${upload}) no-repeat center/cover`}} className="image-upload">
-                                <input 
-                                    type="file"     
-                                    onChange={imageHandler} 
-                                    name="image"
-                                    id="fileUpload"
-                                />
-                                <label htmlFor="fileUpload" className="customFileUpload"></label>
-                            </div>
+                            <Tooltip TransitionComponent={Zoom} title="Upload Image" placement="top">
+                                <div style={{background: image? `url("${image}") no-repeat center/cover`: `url(${upload}) no-repeat center/cover`}} className="image-upload">
+                                    <input 
+                                        type="file"     
+                                        onChange={imageHandler} 
+                                        name="image"
+                                        id="fileUpload"
+                                    />
+                                    <label htmlFor="fileUpload" className="customFileUpload"></label>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="headerFormOneRight">
                             <label className="headerLabelName">Type Your Name</label>
