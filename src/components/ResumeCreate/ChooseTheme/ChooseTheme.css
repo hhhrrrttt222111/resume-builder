@@ -43,6 +43,7 @@
     padding: 3rem;
     margin-right: 5%;
     border-radius: 10px;
+    text-align: center;
 }
 
 .choosePrimaryTheme{
@@ -62,9 +63,12 @@
     .themeForm {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         justify-content: center;
         align-items: center;
+    }
+    .chooseTheme > h1 {
+        margin-bottom: -3%;
     }
     .choosePrimaryTheme, .chooseSecondaryTheme {
         flex: 1;
@@ -73,6 +77,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        margin-left: 5%;
+        margin-top: 5%;
         padding: 3rem 1.5rem;
     }
 }
@@ -82,6 +88,13 @@
 }
 
 @media screen and (max-width: 600px) {
+    .themeForm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
     .chooseTheme > h1 {
         font-size: 2.5rem;
         margin-top: 1.5rem;
@@ -93,17 +106,25 @@
         margin-left: 5%;
         text-align: center;
         transform: scale(0.95);
+        margin-top: 0%;
     }
 }
 
 @media screen and (max-width: 500px) {
+    .chooseTheme > h1 {
+        font-size: 2.3rem;
+        margin-bottom: -10%;
+    }
     .choosePrimaryTheme, .chooseSecondaryTheme {
         transform: scale(0.9);
     }
 }
 
 @media screen and (max-width: 400px) {
-
+    .choosePrimaryTheme, .chooseSecondaryTheme {
+        width: 90%;
+        transform: scale(0.8);
+    }
 }
   
 @media only screen and (min-device-width: 320px) and (max-device-width: 

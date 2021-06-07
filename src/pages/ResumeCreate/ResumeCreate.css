@@ -321,20 +321,20 @@
         margin-bottom: -3%;
     }
     .HrtStepper{
-        width: 150px;
+        width: 350px;
         height: 30px;
         margin-top: 8% !important;
     }
     .HrtStepperItem{
-        height: 15px;
-        width: 15px;
+        height: 25px;
+        width: 25px;
     }
     .HrtStepperItem i{
         display: none;
     }
     .HrtStepperBar{
-        width: 120px;
-        height: 5px;
+        width: 85%;
+        height: 6px;
         background: white;
         border-radius: 5px;
       }
@@ -353,7 +353,7 @@
     }
 
     .HrtStepper{
-        transform: scale(0.8);
+        /* width: 200px; */
         margin-top: 5% !important;
     }
 
@@ -389,7 +389,12 @@
     }
     .HrtStepper{
         margin-top: 2% !important;
-        transform: scale(0.8);
+        width: 300px;
+        
+    }
+    .HrtStepperItem{
+        height: 21px;
+        width: 21px;
     }
     .resumeSlider_Buttons {
         margin-top: 5rem;
@@ -407,6 +412,9 @@
         margin-top: 10%;
         border-radius: 15px;
         width: 80%;
+    }
+    .HrtStepper{
+        transform: scale(0.7);
     }
     .slick-slider {
         height: 390px !important;

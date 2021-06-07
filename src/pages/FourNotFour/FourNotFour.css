@@ -148,3 +148,18 @@
     }
  }
  
+ 
+ 
+ /* @media (min-width:1200px){
+     #fof_star1{
+         animation: stars 5s infinite both;
+     }
+     @keyframes stars{
+        from{
+            transform: scale(0.5);
+        }
+        to{
+            transform: scale(1.2) rotate(360deg);
+        }
+    }
+} */

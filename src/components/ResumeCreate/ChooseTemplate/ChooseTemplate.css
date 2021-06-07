@@ -47,6 +47,7 @@
     .chooseTemplate > h1 {
         font-size: 2.6rem;
         text-align: center;
+        margin-top: 0.2rem;
     }
     .template {
         margin: 1.2rem;
@@ -58,7 +59,14 @@
 @media (max-width:500px){
     .chooseTemplate > h1 {
         font-size: 2.4rem;
+        /* margin-bottom: 0.5rem; */
     }
+}
+@media (max-width:400px){
+    .template > img {
+        width: 240px;
+    }
+
 }
 
 @media only screen and (max-device-width: 330px){
