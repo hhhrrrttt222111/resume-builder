@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Resume-Builder
+
+<p align="center">
+<img alt="resume builder" src="./src/assets/images/svg/logo.svg" width="250px" />
+</p>
+
+[![GitHub stars](https://img.shields.io/github/stars/hhhrrrttt222111/resume-builder?color=ff69b4&style=flatsquare)](https://github.com/hhhrrrttt222111/resume-builder/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/hhhrrrttt222111/resume-builder?color=blueviolet&style=flatsquare)](https://github.com/hhhrrrttt222111/resume-builder/network)
+
+<br><br><br><br><br><br><br><br>
+
+
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+
+
+
+<br><br><br><br><br><br><br><br>
+
+
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
