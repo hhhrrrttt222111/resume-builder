@@ -1,14 +1,14 @@
 import React from 'react'
-
+ 
 import './FourNotFour.css';
 import fof from '../../assets/images/svg/f0f.svg'
 import { Button } from '@material-ui/core';
 import { useHistory } from "react-router-dom";
 import Helmet from 'react-helmet'
-
+ 
 function FourNotFour() {
     let history = useHistory();
-
+ 
     function handleClick1() {
         history.push("/");
       }
@@ -28,5 +28,5 @@ function FourNotFour() {
         </div>
     )
 }
-
+ 
 export default FourNotFour

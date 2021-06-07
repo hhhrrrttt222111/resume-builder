@@ -1,18 +1,15 @@
 .main {
     height: 100vh;
     position: relative;
-    background-color: #ced2d6;
+    background-color: #FFE7C2;
 }
 
-.main  >  h1 {
+.main  >  img {
     position: absolute;
-    top: 10px;
-    left: 5%;
+    top: 5%;
+    left: 4%;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 3rem;
-    font-family: 'Barlow', sans-serif; 
-    color: #1a1a1a;
+    width: 200px;
 }
 
 
