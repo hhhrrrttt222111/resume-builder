@@ -26,7 +26,7 @@ function UpdateContact() {
                         <label className="contactLabelPhone">Phone</label>
                         <input 
                             type="text" 
-                            placeholder="Eg. +919845361309" 
+                            placeholder="Eg. +91 9845361309" 
                             {...register("phone")} 
                             name="phone"
                             // onChange={handleSubmit(onSubmit)}

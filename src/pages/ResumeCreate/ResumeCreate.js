@@ -1,5 +1,5 @@
 import React, { useRef, useState, useContext } from 'react'
-import { Button, Tooltip } from '@material-ui/core';
+import { Button, Tooltip, Dialog, DialogContent, DialogContentText } from '@material-ui/core';
 import Zoom from '@material-ui/core/Zoom';
 import { useHistory } from 'react-router-dom';
 import Slider from "react-slick";
@@ -27,6 +27,15 @@ function ResumeCreate() {
 
 
     const [slide, setSlide] = useState(1)
+    const [open, setOpen] = useState(false);
+
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
 
     const settings = {
         dots: false,
@@ -59,7 +68,11 @@ function ResumeCreate() {
 
 
     const generatePDF = () => {
-        history.push(`/template/${template}`)
+        handleClickOpen()
+
+        setTimeout(() => {
+            history.push(`/template/${template}`)
+        }, 5000);
     }
 
     const goToSlide = (sld) => {
@@ -158,6 +171,20 @@ function ResumeCreate() {
                         <span className="generateText">Generate</span>
                         <IoDocumentOutline className="generate_pdf"/>
                     </Button>
+
+
+                    <Dialog
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="alert-dialog-title"
+                        aria-describedby="alert-dialog-description"
+                    >
+                        <DialogContent className="generate_popup">
+                            <DialogContentText id="alert-dialog-description">
+                                Mobile Users should press on the Open button and select the Download link option to download the PDF
+                            </DialogContentText>
+                        </DialogContent>
+                    </Dialog>
                 </div>
             </div>
         </div>
