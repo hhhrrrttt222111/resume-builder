@@ -5,4 +5,6 @@ export { default as Template2 } from './Templates/Template2'
 
 export { default as ResumeCreate } from './ResumeCreate/ResumeCreate'
 
+export { default as Contributors } from './Contributors/Contributors'
+
 export { default as FourNotFour } from './FourNotFour/FourNotFour'
