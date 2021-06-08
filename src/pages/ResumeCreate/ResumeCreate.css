@@ -177,6 +177,16 @@
     transform: scale(1.5);
 }
 
+
+.generate_popup {
+    background-color: white !important;
+}
+
+.MuiDialogContentText-root {
+    margin-bottom: 12px;
+    color: red !important;
+}
+
 @media (min-width: 1380px) and (max-width: 1500px) {
     .resumeCreate{
         background-size: cover;

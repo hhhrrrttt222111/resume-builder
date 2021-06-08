@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import './Main.css';
 
 import mainImg from '../../../assets/images/svg/landingImg.svg'
+import logo from '../../../assets/images/svg/logo_with_text.svg'
 
 
 function Main() {
@@ -16,7 +17,7 @@ function Main() {
   
     return (
         <div className="main">
-            <h1>LOGO</h1>
+            <img src={logo} alt=""/>
             <div className="main-container">
                 <div className="main-description">
                     <h1>Digital flipbook maker for stunning magazines</h1>
