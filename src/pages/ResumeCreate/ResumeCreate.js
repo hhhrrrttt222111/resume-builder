@@ -181,7 +181,15 @@ function ResumeCreate() {
                     >
                         <DialogContent className="generate_popup">
                             <DialogContentText id="alert-dialog-description">
-                                Mobile Users should press on the Open button and select the Download link option to download the PDF
+                                <div>
+                                    <h3>Generating PDF...</h3>
+
+                                    <img src="" alt="" />
+
+                                    <p>
+                                        Mobile Users should press on the Open button and select the Download link option to download the PDF
+                                    </p>
+                                </div>
                             </DialogContentText>
                         </DialogContent>
                     </Dialog>
