@@ -6,7 +6,10 @@ import Helmet from 'react-helmet'
 
 
 import './Contributors.css';
-import one from '../../assets/images/svg/avatars/ten.svg'
+import img1 from '../../assets/images/png/anjali.png'
+import img2 from '../../assets/images/png/gayathry.png'
+import img3 from '../../assets/images/png/hemanth.png'
+import img4 from '../../assets/images/png/shimil.png'
 
 
 const contributors = [
@@ -14,25 +17,25 @@ const contributors = [
         id: 1,
         name: 'Hemanth R',
         github: 'https://github.com/hhhrrrttt222111',
-        image: one,
+        image: img3,
     },
     {
         id: 2,
-        name: 'Shimil Shaji ',
+        name: 'Shimil Shaji Abraham',
         github: 'https://github.com/ShimilSAbraham',
-        image: one,
+        image: img4,
     },
     {
         id: 3,
         name: 'Gayathry S',
         github: 'https://github.com/Gayathry17',
-        image: one,
+        image: img2,
     },
     {
         id: 4,
         name: 'Anjali Rajendran',
         github: 'https://github.com/Anjali-28',
-        image: one,
+        image: img1,
     },
 ]
 
@@ -43,7 +46,7 @@ function Contributors() {
                 <title>Rzume - Contributors</title>
             </Helmet>
 
-            <h1>Contributors</h1>
+            <h1>CONTRIBUTORS</h1>
 
             <div className="contrib_container">
                 <Grid className="contrib-grid" container direction="row" alignItems="center" justify="center">
