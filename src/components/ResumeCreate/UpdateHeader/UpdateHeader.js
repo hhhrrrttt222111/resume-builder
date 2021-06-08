@@ -73,7 +73,7 @@ function UpdateHeader() {
                             <label className="headerLabelTitle">Type Your Title</label>
                             <input 
                                 type="text" 
-                                placeholder="Eg. Frontent Developer" 
+                                placeholder="Eg. Frontend Developer" 
                                 {...register("title")} 
                                 name="title"
                                 onChange={handleSubmit(onSubmit)}
