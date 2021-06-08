@@ -22,7 +22,7 @@ function Main() {
                 <div className="main-description">
                     <h1>Digital flipbook maker for stunning magazines</h1>
                     <p>Create, share and embed online magazines, transforming your PDFs into online flipping books.</p>
-                    <Button onClick={handleClick}>Get Started</Button>
+                    <Button onClick={handleClick}>Create Resume</Button>
                 </div>
                 <div className="img-container">
                     <img src={mainImg} alt=""/>

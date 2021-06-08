@@ -2,6 +2,8 @@ import { Grid, Card, CardContent } from '@material-ui/core'
 import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Fade from 'react-reveal/Fade';
+import Helmet from 'react-helmet'
+
 
 import './Contributors.css';
 import one from '../../assets/images/svg/avatars/ten.svg'
@@ -37,6 +39,10 @@ const contributors = [
 function Contributors() {
     return (
         <div className="contributors">
+            <Helmet>
+                <title>Rzume - Contributors</title>
+            </Helmet>
+
             <h1>Contributors</h1>
 
             <div className="contrib_container">
@@ -50,7 +56,7 @@ function Contributors() {
                                     <h1>{contrib.name}</h1>
                                     <div className="contrib-description">
                                         <img src={contrib.image} alt="" />
-                                        <a href={contrib.github} className="contrib-icon" >
+                                        <a href={contrib.github} className="contrib-icon" target="_blank" rel="noreferrer">
                                             <GitHubIcon />
                                         </a>
                                     </div>

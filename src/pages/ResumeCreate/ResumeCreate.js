@@ -88,7 +88,7 @@ function ResumeCreate() {
     return (
         <div className="resumeCreate">
             <Helmet>
-                <title>Create your Resume</title>
+                <title>Rzume - Build Your Resume</title>
             </Helmet>
             <div className="resumeCreate_Container">
                 <div className="resumeCreate_header">

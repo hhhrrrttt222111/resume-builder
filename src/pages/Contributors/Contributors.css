@@ -2,15 +2,15 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     
 }
 
 .contributors > h1 {
-    position: absolute;
+    /* position: absolute;
     top:5%;
-    left: 40%;
+    left: 40%; */
     font-size: 3rem;
 }
 

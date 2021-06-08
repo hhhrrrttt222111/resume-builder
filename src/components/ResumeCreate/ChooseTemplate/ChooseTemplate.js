@@ -26,8 +26,6 @@ function ChooseTemplate() {
 
     const [tempId, setTempId] = useState(1)
 
-    // console.log(resume.templateId)
-
     useEffect(() => {
         updateTemplate(tempId)
         // eslint-disable-next-line

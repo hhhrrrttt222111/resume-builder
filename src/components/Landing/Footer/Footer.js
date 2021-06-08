@@ -9,7 +9,7 @@ function Footer() {
     var year=new Date().getFullYear();
     return (
         <div className="footer">
-            <p>Copyright © {year} | Portfolio Maker</p>
+            <p>Copyright © {year} | Rzume</p>
             <a href="https://github.com/hhhrrrttt222111/resume-builder" target="_blank" rel="noreferrer">
                 <GrGithub className="github"/>
             </a>

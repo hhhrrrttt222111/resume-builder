@@ -10,7 +10,7 @@ function Landing() {
     return (
         <div className="landing">
             <Helmet>
-                <title>Resume Builder</title>
+                <title>Rzume - Build Your Resume</title>
             </Helmet>
             <Main />
             <Features />
