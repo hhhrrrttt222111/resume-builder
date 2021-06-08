@@ -113,6 +113,14 @@
         height: fit-content;
     }
 
+    .main > img {
+        position: absolute;
+        top: 3%;
+        left: 4%;
+        cursor: pointer;
+        width: 125px;
+    }
+
     .main > h1{
          font-size: 2.5rem;
     }
@@ -141,6 +149,12 @@
     .main-description > p{
         width: 100%;
     }
+
+    .main-description > button {
+        padding: 0.5rem 1.5rem;
+        font-size: 15px;
+    }
+
     .img-container{
         flex: 1;
         margin: 3rem;
@@ -149,7 +163,7 @@
     .img-container > img {
         width: 400px;
     }
-
+    
 
 }
 
@@ -203,6 +217,28 @@
   
 @media only screen and (min-device-width: 320px) and (max-device-width: 
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+    .main-description > h1{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .main-description > p{
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .main-description > button {
+        padding: 0.5rem 1.5rem;
+        font-size: 15px;
+    }
+    .main > img {
+        position: absolute;
+        top: 3%;
+        left: 4%;
+        cursor: pointer;
+        width: 125px;
+    }
   
 
 }
