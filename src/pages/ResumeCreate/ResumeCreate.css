@@ -180,6 +180,7 @@
 
 .generate_popup {
     background-color: white !important;
+    min-height: 300px !important;
 }
 
 .MuiDialogContentText-root {
