@@ -1,7 +1,7 @@
 # Resume-Builder
 
 <p align="center">
-<img alt="resume builder" src="./src/assets/images/svg/logo.svg" width="250px" />
+<img alt="resume builder" src="./src/assets/images/svg/logo_with_text.svg" width="250px" />
 </p>
 
 [![GitHub stars](https://img.shields.io/github/stars/hhhrrrttt222111/resume-builder?color=ff69b4&style=flatsquare)](https://github.com/hhhrrrttt222111/resume-builder/stargazers)
