@@ -12,7 +12,7 @@ import img3 from '../../assets/images/png/hemanth.png'
 import img4 from '../../assets/images/png/shimil.png'
 
 
-const contributors = [
+const contribData = [
     {
         id: 1,
         name: 'Hemanth R',
@@ -40,6 +40,12 @@ const contributors = [
 ]
 
 function Contributors() {
+
+    var contributors = contribData
+        .map((a) => ({sort: Math.random(), value: a}))
+        .sort((a, b) => a.sort - b.sort)
+        .map((a) => a.value)
+
     return (
         <div className="contributors">
             <Helmet>
