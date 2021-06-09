@@ -20,7 +20,9 @@ function Features() {
                     <Fade left>
                         <div className="features-text">
                             <h2>Completely secure</h2>
-                            <p>We do not save your data. Your privacy is absolutely guaranteed.</p>
+                            <p>
+                                Create your resume without any of the usual hassle of signing up and creating an account. We do not save your data and your privacy is absolutely guaranteed.
+                            </p>
                         </div>
                     </Fade>                     
 
