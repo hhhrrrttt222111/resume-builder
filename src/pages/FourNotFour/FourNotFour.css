@@ -8,16 +8,6 @@
     overflow: hidden;
 }
  
-.fnf-imgcontainer {
-    padding: 2rem;
-}
- 
-.fnf-imgcontainer > img {
-    width: 500px;
-    pointer-events: none;
-    transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-}
  
 .fnf-description {
     display: flex;
@@ -68,9 +58,7 @@
         align-items: center;
     }
  
-    .fnf-imgcontainer > img {
-        width: 350px;
-    }
+    
  
     .fnf-description {
         margin-bottom: 20px;
@@ -91,9 +79,6 @@
 }
  
 @media screen and (max-width: 800px){
-    .fnf-imgcontainer > img{
-        width: 330px;
-    }
     .fnf-description > h1{
         font-size: 5rem;
         margin-bottom: 20px;
@@ -107,9 +92,135 @@
     }
 }
  
+.fnf-imgcontainer {
+    padding: 2rem;
+}
+.fnf-imgcontainer > svg {
+    width: 500px;
+    pointer-events: none;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+#fof_star1{
+    transform-origin:86% 87%;
+    animation: starSpin1 3s infinite both ease-in-out alternate;
+}
+
+#fof_star2{
+    transform-origin: 92% 36%;
+    animation: starSpin2 5s infinite 1.5s both ease alternate-reverse;
+}
+#fof_star3{
+    transform-origin:7% 21%;
+    animation: starSpin1 3s infinite 1s both ease alternate-reverse;
+}
+
+#fof_star4{
+    transform-origin: 47.5% 15%;
+    animation: starSpin2 5s infinite 0.5s both ease alternate;
+}
+
+@keyframes starSpin1{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1.2) ;
+    }
+}
+
+@keyframes starSpin2{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.3) rotate(360deg);
+    }
+}
+
+#fof_astronaut{
+    transform-origin: 25% 82%;
+    animation: muskWave 2.5s infinite both ease-in-out alternate;
+}
+@keyframes muskWave{
+    from{
+        transform: rotate(20deg);
+    }
+    to{
+        transform: rotate(60deg) ;
+    }
+}
+
+
+#fof_rocket{
+    transform-origin: 72% 12%;
+    animation: veemanam 2.5s infinite both ease alternate;
+}
+@keyframes veemanam{
+    from{
+        transform: scale(1) ;
+    }
+    to{
+        transform: scale(1.1) ;
+    }
+}
+
+#fof_fuel_right{
+    animation: fuelRight 3s infinite both 1s ease alternate;
+}
+
+@keyframes fuelRight{
+    from{
+        transform: translate(4px,-4px) ;
+    }
+    to{
+        transform: translate(-10px,14px) ;
+    }
+}
+#fof_fuel_left{
+    animation: fuelLeft 2s infinite both ease alternate;
+}
+
+@keyframes fuelLeft{
+    from{
+        transform: translate(2px,-2px) ;
+    }
+    to{
+        transform: translate(-8px,10px) ;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .fnf-imgcontainer{
+        margin-top: -20%;
+        margin-bottom: -35%;
+    }
+    .fnf-imgcontainer > svg {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 800px){
+    .fnf-imgcontainer > svg{
+        width: 400px;
+        margin-top: -25%;
+        margin-bottom: -20%;
+    }
+}
 @media screen and (max-width: 600px){
-    .fnf-imgcontainer > img{
-        width: 100%;
+    .fnf-imgcontainer > svg{
+        width: 350px;
+        margin-bottom: -40%;
+
+    }
+}
+ 
+@media screen and (max-width: 500px){
+    .fnf-imgcontainer > svg{
+        width: 320px;
+        margin-top: -40%;
+        margin-bottom: -60%;
+
     }
 }
  
@@ -148,18 +259,3 @@
     }
  }
  
- 
- 
- /* @media (min-width:1200px){
-     #fof_star1{
-         animation: stars 5s infinite both;
-     }
-     @keyframes stars{
-        from{
-            transform: scale(0.5);
-        }
-        to{
-            transform: scale(1.2) rotate(360deg);
-        }
-    }
-} */
