@@ -1,7 +1,7 @@
 .main {
     height: 100vh;
     position: relative;
-    background-color: #FFE7C2;
+    background-color: #ffaf8a;
 }
 
 .main > img {
@@ -53,30 +53,28 @@
 
 .main-description > button{
     margin-top: 2rem;
-   font-size: 18px;
-   background: linear-gradient(to right,#1090D9 50%,#041e91 100%);
-   background-size: 150% 150%;
-   background-position-x: 0%;
-   border-radius: 70px;
-   padding: 0.7rem 2rem;
-   font-family: Nunito;
-   font-style: normal;
-   text-transform: inherit;
-   font-weight: bold;
-   text-align: center;
-   color: #2a2a2a;
-   transition: all 0.5s linear;
-   box-shadow: inset 3px 3px 6px #000000bc, inset 8px 8px 20px #00000030,
-   inset -3px -3px 6px #ffffff50, inset -8px -8px 20px #ffffff70;
+    font-size: 1.5rem;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #1090D9, #00B4D7, #041e91);
+    box-shadow: 3px 3px 6px #0000006c, 8px 8px 20px #00000030,
+    -3px -3px 6px #ffffff90, -8px -8px 20px #ffffff30;
+    border-radius: 70px;
+    padding: 0.75rem 2rem;
+    font-family: Nunito;
+    font-style: normal;
+    text-transform: inherit;
+    font-weight: bold;
+    text-align: center;
+    color: #303030;
+
+    transition: 0.5s ease;
+    
 }
 
 .main-description > button:hover{
-   color: #efefef;
-   background: linear-gradient(to right,#1090D9 0%,#041e91 100%);
-   background-position-x: 100%;
-   box-shadow: 3px 3px 6px #000000ac, 8px 8px 20px #00000030,
-   -3px -3px 6px #ffffffd0, -8px -8px 20px #ffffff70;
-
+    background-position: 80% 0;
+    transition: all .4s ease-in-out;
+    color: #efefef;
 }
 
 .img-container {
@@ -151,8 +149,7 @@
     }
 
     .main-description > button {
-        padding: 0.5rem 1.5rem;
-        font-size: 15px;
+        font-size: 1.3rem;
     }
 
     .img-container{
@@ -188,15 +185,22 @@
 }
 
 @media screen and (max-width: 600px) {
+    .main-description > h1{
+        font-size: 2.3rem;
+    }
+    .main-description > p{
+        font-size: 1.5rem;
+    }
     .main-container{
         padding-top: 4rem;
       
     }
+    .main > img {
+        left: 10%;
+        transform: scale(1.2);
+    }
 
-}
-
-@media screen and (max-width: 400px) {
-
+    
     .main-description > button{
         margin-top: 2rem;
        font-size: 1.3rem;
@@ -209,10 +213,12 @@
        font-weight: bold;
        text-align: center;
        color: #efefef;
-       box-shadow: 3px 3px 6px #000000ac, 8px 8px 20px #00000030,
-       -3px -3px 6px #ffffffd0, -8px -8px 20px #ffffff70;
     
     }
+
+}
+
+@media screen and (max-width: 400px) {
 
 
 }
