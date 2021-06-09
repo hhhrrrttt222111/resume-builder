@@ -14,7 +14,7 @@ function FourNotFour() {
     return (
         <div className="fnf">
             <Helmet>
-                <title>Oops!404</title>
+                <title>Oops! Page not found</title>
             </Helmet>
             
             <div className="fnf-imgcontainer">
