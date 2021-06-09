@@ -12,15 +12,15 @@ function Features() {
                 <div className="features-description">
                     <Fade left>
                         <div className="features-text">
-                            <h2>Beautiful Designs</h2>
-                            <p>Customize your design to suit your own preferences to create an online portfolio which is truly unique. Preview changes instantly without affecting your live site and without writing any code.</p>
+                            <h2>Professional templates</h2>
+                            <p>Pick one from our many attractive templates, fill in your skills and experiences and you are all set to go. Our completely customizable designs allow you to change font, colors, layout and images, making it a reflection of you, with great ease.</p>
                         </div>
                     </Fade>
 
                     <Fade left>
                         <div className="features-text">
-                            <h2>Beautiful Designs</h2>
-                            <p>Customize your design to suit your own preferences to create an online portfolio which is truly unique. Preview changes instantly without affecting your live site and without writing any code.</p>
+                            <h2>Completely secure</h2>
+                            <p>We do not save your data. Your privacy is absolutely guaranteed.</p>
                         </div>
                     </Fade>                     
 

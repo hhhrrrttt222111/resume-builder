@@ -20,8 +20,8 @@ function Main() {
             <img src={logo} alt=""/>
             <div className="main-container">
                 <div className="main-description">
-                    <h1>Digital flipbook maker for stunning magazines</h1>
-                    <p>Create, share and embed online magazines, transforming your PDFs into online flipping books.</p>
+                    <h1>The ultimate tool for an exceptional resume.</h1>
+                    <p>Create nothing but the best with us.</p>
                     <Button onClick={handleClick}>Create Resume</Button>
                 </div>
                 <div className="img-container">

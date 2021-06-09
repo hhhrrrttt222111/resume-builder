@@ -25,10 +25,10 @@ function Demo() {
                             <div className="democard-content">
                                 <div className="cardTop">
                                     <div className="demoCardImg1"></div>
-                                    <h2 className="demoCardHead1">Read</h2>
+                                    <h2 className="demoCardHead1">Choose your template. </h2>
                                 </div>
                                 <div className="cardBottom">
-                                    <p>Choose a sleek design and layout to get started.</p>
+                                    <p>Take your pick from our beautiful templates that are designed to impress. You can personalize it and give it your own unique touch.</p>
                                 </div>
                             </div>
                         </CardContent>
@@ -40,10 +40,10 @@ function Demo() {
                         <div className="democard-content">
                                 <div className="cardTop">
                                     <div className="demoCardImg2"></div>
-                                    <h2 className="demoCardHead2">Code</h2>
+                                    <h2 className="demoCardHead2">Fill in your details</h2>
                                 </div>
                                 <div className="cardBottom">
-                                    <p>Choose a sleek design and layout to get started.</p>
+                                    <p>Fill in your skills, previous experiences and educational qualifications.</p>
                                 </div>
                             </div>
                         </CardContent>
@@ -55,10 +55,10 @@ function Demo() {
                         <div className="democard-content">
                                 <div className="cardTop">
                                     <div className="demoCardImg3"></div>
-                                    <h2  className="demoCardHead3">Store</h2>
+                                    <h2  className="demoCardHead3">Download pdf</h2>
                                 </div>
                                 <div className="cardBottom">
-                                    <p>Choose a sleek design and layout to get started.</p>
+                                    <p>Download the remarkable resume you have created and send it to your potential employers with confidence.</p>
                                 </div>
                             </div>
                         </CardContent>

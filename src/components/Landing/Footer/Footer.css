@@ -7,6 +7,20 @@
     position: relative;
 }
 
+.group {
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+}
+
+.contributors_icon {
+    font-size: 1.98rem !important;
+    color: #1b1919;
+    padding: 0.5rem;
+
+    border-radius: 100%;
+}
+
 .footer > p{
     font-family: 'Monteserrat', sans-serif;
     font-size: 1rem;
