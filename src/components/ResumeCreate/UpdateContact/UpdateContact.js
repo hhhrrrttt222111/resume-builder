@@ -12,7 +12,6 @@ function UpdateContact() {
 
     const onSubmit = (data) => {
         updateContact(data) 
-        console.log(resume.contact) 
     };
 
 
@@ -29,8 +28,9 @@ function UpdateContact() {
                             placeholder="Eg. +91 9845361309" 
                             {...register("phone")} 
                             name="phone"
-                            // onChange={handleSubmit(onSubmit)}
+                            onChange={handleSubmit(onSubmit)}
                             className="input_c"
+                            defaultValue={resume.contact.phone}
                         />
                     </div>
                     <div className="contactFormOne">
@@ -40,8 +40,9 @@ function UpdateContact() {
                             placeholder="Eg. abcxyz@gmail.com" 
                             {...register("email")} 
                             name="email"
-                            // onChange={handleSubmit(onSubmit)}
+                            onChange={handleSubmit(onSubmit)}
                             className="input_c"
+                            defaultValue={resume.contact.email}
                         />
                     </div>
                     <div className="contactFormThree">
@@ -51,8 +52,9 @@ function UpdateContact() {
                             placeholder="Eg. www.myofficialsite.com" 
                             {...register("website")} 
                             name="website"
-                            // onChange={handleSubmit(onSubmit)}
+                            onChange={handleSubmit(onSubmit)}
                             className="input_c"
+                            defaultValue={resume.contact.website}
                         />
                     </div>
                     <div className="contactFormFour">
@@ -62,8 +64,9 @@ function UpdateContact() {
                             placeholder="Eg. 123 Main Street, New York, NY 10030" 
                             {...register("address")} 
                             name="address"
-                            // onChange={handleSubmit(onSubmit)}
+                            onChange={handleSubmit(onSubmit)}
                             className="input_add"
+                            defaultValue={resume.contact.address}
                         />
                     </div>
 

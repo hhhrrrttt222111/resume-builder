@@ -13,7 +13,7 @@ function UpdateHeader() {
     const [image, setImage] = useState(null)
 
 
-    const { updateImage, updateHeader } = useContext(DetailsContext);
+    const { updateImage, updateHeader, resume } = useContext(DetailsContext);
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
@@ -23,6 +23,8 @@ function UpdateHeader() {
 
 
     const types = ['image/png', 'image/jpeg', 'image/jpg']
+
+    console.log(localStorage.getItem("dataLocal"))
 
     
     const imageHandler = (e) => {
@@ -69,6 +71,7 @@ function UpdateHeader() {
                                 name="name"
                                 onChange={handleSubmit(onSubmit)}
                                 className="input_name"
+                                defaultValue={resume.header.name}
                             />
                             <label className="headerLabelTitle">Type Your Title</label>
                             <input 
@@ -78,6 +81,7 @@ function UpdateHeader() {
                                 name="title"
                                 onChange={handleSubmit(onSubmit)}
                                 className="input_title"
+                                defaultValue={resume.header.title}
                             />
                         </div>
                     </div>
@@ -90,6 +94,7 @@ function UpdateHeader() {
                             name="bio"
                             onChange={handleSubmit(onSubmit)}
                             className="input_bio"
+                            defaultValue={resume.header.bio}
                         />
                     </div>
 

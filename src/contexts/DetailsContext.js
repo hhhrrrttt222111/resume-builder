@@ -1,10 +1,11 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 export const DetailsContext = createContext()
 
 function DetailsContextProvider(props) {
 
-    const [resume, setResume] = useState({
+    const [resume, setResume] = useState(
+        JSON.parse(localStorage.getItem("resumeLocal")) || {
         templateId: '1', 
         image: '',
         header: {},
@@ -48,9 +49,9 @@ function DetailsContextProvider(props) {
         setResume({ ...resume,  theme: data})
     }
 
-    // useEffect(() => {
-    //     localStorage.setItem("dataLocal", JSON.stringify(resume));
-    //   }, [resume]);
+    useEffect(() => {
+        localStorage.setItem("resumeLocal", JSON.stringify(resume));
+      }, [resume]);
 
     const value = { resume, updateHeader, updateEducation, updateSkills, updateInterests, updateContact, updateTemplate, updateImage, updateTheme }
 

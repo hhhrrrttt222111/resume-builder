@@ -66,6 +66,11 @@ function ResumeCreate() {
         setSlide(slide - 1);
     }
 
+    // to clear localStorage
+    const clearStoredData = () => {
+        localStorage.clear();
+    }
+
 
     const generatePDF = () => {
         handleClickOpen()
@@ -181,7 +186,7 @@ function ResumeCreate() {
                     >
                         <DialogContent className="generate_popup">
                             <DialogContentText id="alert-dialog-description">
-                                <div>
+                                <div className="popupDiv">
                                     <h3>Generating PDF...</h3>
 
                                     <img src="" alt="" />
@@ -189,6 +194,8 @@ function ResumeCreate() {
                                     <p>
                                         Mobile Users should press on the Open button and select the Download link option to download the PDF
                                     </p>
+
+                                    <Button onClick={clearStoredData}>Do not save my data</Button>
                                 </div>
                             </DialogContentText>
                         </DialogContent>

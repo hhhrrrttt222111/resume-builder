@@ -12,7 +12,7 @@ import { DetailsContext } from '../../../contexts/DetailsContext'
 
 function SkillInterest() {
 
-    const { updateInterests, updateSkills } = useContext(DetailsContext);
+    const { updateInterests, updateSkills, resume } = useContext(DetailsContext);
     const { register, handleSubmit } = useForm();
 
 
@@ -43,6 +43,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onInterestSubmit)}
                                         className="input__se"
                                         placeholder="e.g. Reading" 
+                                        defaultValue={resume.interests.interest1}
                                     />
                                     <input 
                                         type="text" 
@@ -51,6 +52,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onInterestSubmit)}
                                         className="input__se"
                                         placeholder="e.g. Singing" 
+                                        defaultValue={resume.interests.interest2}
                                     />
                                     <input 
                                         type="text" 
@@ -59,6 +61,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onInterestSubmit)}
                                         className="input__se"
                                         placeholder="e.g. Watching Movies" 
+                                        defaultValue={resume.interests.interest3}
                                     />
                                     <input 
                                         type="text" 
@@ -67,6 +70,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onInterestSubmit)}
                                         className="input__se"
                                         placeholder="e.g. Listening to music" 
+                                        defaultValue={resume.interests.interest4}
                                     />
                                     <input 
                                         type="text" 
@@ -75,6 +79,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onInterestSubmit)}
                                         className="input__se"
                                         placeholder="e.g. Dancing" 
+                                        defaultValue={resume.interests.interest5}
                                     />
                                 </div>
                             </AccordionDetails>
@@ -98,6 +103,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onSkillSubmit)}
                                         className="input__se"
                                         placeholder="e.g. HTML" 
+                                        defaultValue={resume.skills.skill1}
                                     />
                                     <input 
                                         type="text" 
@@ -106,6 +112,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onSkillSubmit)}
                                         className="input__se"
                                         placeholder="e.g. Wordpress" 
+                                        defaultValue={resume.skills.skill2}
                                     />
                                     <input 
                                         type="text" 
@@ -114,6 +121,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onSkillSubmit)}
                                         className="input__se"
                                         placeholder="e.g. React JS" 
+                                        defaultValue={resume.skills.skill3}
                                     />
                                     <input 
                                         type="text" 
@@ -122,6 +130,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onSkillSubmit)}
                                         className="input__se"
                                         placeholder="e.g. Photoshop" 
+                                        defaultValue={resume.skills.skill4}
                                     />
                                     <input 
                                         type="text" 
@@ -130,6 +139,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onSkillSubmit)}
                                         className="input__se"
                                         placeholder="e.g. Java" 
+                                        defaultValue={resume.skills.skill5}
                                     />
                                     <input 
                                         type="text" 
@@ -138,6 +148,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onSkillSubmit)}
                                         className="input__se"
                                         placeholder="e.g. UI/UX" 
+                                        defaultValue={resume.skills.skill6}
                                     />
                                     <input 
                                         type="text" 
@@ -146,6 +157,7 @@ function SkillInterest() {
                                         onChange={handleSubmit(onSkillSubmit)}
                                         className="input__se"
                                         placeholder="e.g. JavaScript" 
+                                        defaultValue={resume.skills.skill7}
                                     />
                                 </div>
                             </AccordionDetails>

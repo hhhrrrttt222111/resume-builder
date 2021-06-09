@@ -12,7 +12,7 @@ import { DetailsContext } from '../../../contexts/DetailsContext'
 
 function UpdateEduExp() {
 
-    const { updateEducation } = useContext(DetailsContext);
+    const { updateEducation, resume } = useContext(DetailsContext);
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
@@ -42,6 +42,7 @@ function UpdateEduExp() {
                                     name="school1"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.school1}
                                 />
                                 <input 
                                     type="text" 
@@ -50,6 +51,7 @@ function UpdateEduExp() {
                                     name="degree1"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.degree1}
                                 />
                                 <input 
                                     type="text" 
@@ -58,6 +60,7 @@ function UpdateEduExp() {
                                     name="edyear1"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.edyear1}
                                 />
                             </div>
                             </AccordionDetails>
@@ -75,6 +78,7 @@ function UpdateEduExp() {
                                     name="school2"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.school2}
                                 />
                                 <input 
                                     type="text" 
@@ -83,6 +87,7 @@ function UpdateEduExp() {
                                     name="degree2"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.degree2}
                                 />
                                 <input 
                                     type="text" 
@@ -91,6 +96,7 @@ function UpdateEduExp() {
                                     name="edyear2"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.edyear2}
                                 />
                             </div>
                             </AccordionDetails>
@@ -108,6 +114,7 @@ function UpdateEduExp() {
                                     name="school3"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.school3}
                                 />
                                 <input 
                                     type="text" 
@@ -116,6 +123,7 @@ function UpdateEduExp() {
                                     name="degree3"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.degree3}
                                 />
                                 <input 
                                     type="text" 
@@ -124,6 +132,7 @@ function UpdateEduExp() {
                                     name="edyear3"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.edyear3}
                                 />
                             </div>
                             </AccordionDetails>
@@ -148,6 +157,7 @@ function UpdateEduExp() {
                                     name="company1"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.company1}
                                 />
                                 <input 
                                     type="text" 
@@ -156,6 +166,7 @@ function UpdateEduExp() {
                                     name="job1"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.job1}
                                 />
                                 <input 
                                     type="text" 
@@ -164,6 +175,7 @@ function UpdateEduExp() {
                                     name="exyear1"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.exyear1}
                                 />
                             </div>
                             </AccordionDetails>
@@ -181,6 +193,7 @@ function UpdateEduExp() {
                                     name="company2"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.company2}
                                 />
                                 <input 
                                     type="text" 
@@ -189,6 +202,7 @@ function UpdateEduExp() {
                                     name="job2"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.job2}
                                 />
                                 <input 
                                     type="text" 
@@ -197,6 +211,7 @@ function UpdateEduExp() {
                                     name="exyear2"
                                     onChange={handleSubmit(onSubmit)}
                                     className="input_ee"
+                                    defaultValue={resume.education.exyear2}
                                 />
                             </div>
                             </AccordionDetails>
