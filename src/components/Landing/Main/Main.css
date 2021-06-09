@@ -4,12 +4,13 @@
     background-color: #FFE7C2;
 }
 
-.main  >  img {
+.main > img {
     position: absolute;
     top: 5%;
     left: 4%;
     cursor: pointer;
     width: 200px;
+    pointer-events: none;
 }
 
 
@@ -22,7 +23,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-  
 }
 
 .main-description{
