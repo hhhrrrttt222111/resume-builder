@@ -16,6 +16,7 @@ function FourNotFour() {
             <Helmet>
                 <title>Oops!404</title>
             </Helmet>
+            
             <div className="fnf-imgcontainer">
             <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="fof" clip-path="url(#clip0)">

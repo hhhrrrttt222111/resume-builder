@@ -70,7 +70,7 @@ function UpdateContact() {
                         />
                     </div>
 
-                    <Button type="submit" onclick={handleSubmit(onSubmit)}>Save</Button>
+                    <Button type="submit" onClick={handleSubmit(onSubmit)}>Save</Button>
                 </form>
             </div>
         </div>

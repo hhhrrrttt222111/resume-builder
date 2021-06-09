@@ -24,8 +24,6 @@ function UpdateHeader() {
 
     const types = ['image/png', 'image/jpeg', 'image/jpg']
 
-    console.log(localStorage.getItem("dataLocal"))
-
     
     const imageHandler = (e) => {
         let selected = e.target.files[0]

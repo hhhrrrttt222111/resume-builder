@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react'
-
+import { Grid } from '@material-ui/core'
 import { DetailsContext } from '../../../contexts/DetailsContext'
 import './ChooseTemplate.css'
 
 import template1 from '../../../assets/images/templates/template1.png'
-import { Grid } from '@material-ui/core'
+import template2 from '../../../assets/images/templates/template2.png'
 
 
 const templates = [
@@ -15,7 +15,7 @@ const templates = [
     },
     {
         id: 2,
-        img: template1,
+        img: template2,
         name: 'Dracarys'
     },
 ]
