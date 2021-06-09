@@ -122,7 +122,7 @@
     }
 
     .main > h1{
-         font-size: 2.5rem;
+        font-size: 2.5rem;
     }
     .main-container{
         padding-top: 5rem;
@@ -142,8 +142,8 @@
 
 
     .main-description > h1{
-        font-size: 2.5rem;
-        width: 100%;
+        font-size: 2.9rem;
+        width: 90%;
     }
 
     .main-description > p{
@@ -168,12 +168,13 @@
 }
 
 @media screen and (max-width: 800px) {
-    .main{
-
-    }
     
     .main-container{
         padding-top: 5rem;      
+    }
+    .main-description > h1{
+        font-size: 2.5rem;
+        width: 100%;
     }
     .img-container{
         margin: 2rem;
@@ -182,6 +183,7 @@
     .img-container > img{
         width: 100%;
     }
+
 
 }
 
