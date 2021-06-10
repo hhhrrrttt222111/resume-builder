@@ -36,7 +36,6 @@
 * Download the remarkable resume you have created and send it to your potential employers with confidence.
 <br> 
 
-
 ## Packages Used &nbsp;&nbsp; :package:
 
 | Client Side Packages  |
@@ -58,9 +57,14 @@
 
 <br><br>
 
+### Upcoming Features &nbsp;&nbsp; 
+* More templates
+* Advanced customizations
+* Awards field
+
+<br><br>
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
-
 
 
 <br><br>
