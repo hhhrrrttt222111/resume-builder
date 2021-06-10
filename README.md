@@ -68,8 +68,7 @@
 
 <br><br>
 
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
-
+<img alt="resume builder" src="./src/assets/images/svg/Made-with-react.svg" />
 
 <br><br>
 
