@@ -17,10 +17,10 @@ function Demo() {
                             <div className="democard-content">
                                 <div className="cardTop">
                                     <div className="demoCardImg1"></div>
-                                    <h2 className="demoCardHead1">Choose your template. </h2>
+                                    <h2 className="demoCardHead1" style={{marginTop: window.innerWidth > 400 ? "-3%": "3%"}}>Choose your template. </h2>
                                 </div>
                                 <div className="cardBottom">
-                                    <p style={{marginTop: window.innerWidth > 400 ? "10%": "-5%"}}>Take your pick from our beautiful templates that are designed to impress. You can personalize it and give it your own unique touch.</p>
+                                    <p style={{marginTop: window.innerWidth > 400 ? "10%": "-3%"}}>Take your pick from our beautiful templates that are designed to impress. You can personalize it and give it your own unique touch.</p>
                                 </div>
                             </div>
                         </CardContent>
