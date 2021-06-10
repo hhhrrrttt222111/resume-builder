@@ -5,14 +5,6 @@ import Fade from 'react-reveal/Fade';
 
 import './Demo.css';
 
-// import card1Opened from '../../../assets/images/svg/card1_opened.svg';
-// import card2Opened from '../../../assets/images/svg/card2_opened.svg';
-// import card3Opened from '../../../assets/images/svg/card3_opened.svg';
-
-// import card1Closed from '../../../assets/images/svg/card1_closed.svg';
-// import card2Closed from '../../../assets/images/svg/card2_closed.svg';
-// import card3Closed from '../../../assets/images/svg/card3_closed.svg';
-
 
 
 function Demo() {

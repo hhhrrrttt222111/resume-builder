@@ -86,8 +86,6 @@ function ResumeCreate() {
     }
 
 
-    console.log(resume)
-
     const shadow =  '5px 5px 10px #000000ae, -5px -5px 10px #ddf0ed99';
 
     return (

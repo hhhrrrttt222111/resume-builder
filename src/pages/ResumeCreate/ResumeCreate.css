@@ -179,13 +179,49 @@
 
 
 .generate_popup {
-    background-color: white !important;
+    background-color: #1090D9 !important;
     min-height: 300px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #063A57;
+}
+
+.popupDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popupDiv h3{
+    font-family: 'Nunito', sans-serif !important;
+
+}
+.popupDiv p{
+    font-family: 'Nunito', sans-serif !important;
+
+}
+
+.popupDiv button{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding: 0.6rem 2.0rem;
+    text-transform: inherit;
+    box-sizing: border-box;
+    
+    color: #ddf0ed;
+    background: #1090D9;
+    border-radius: 40px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif !important;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.25), 3px 3px 6px rgba(0, 0, 0, 0.55);
+    
 }
 
 .MuiDialogContentText-root {
     margin-bottom: 12px;
-    color: red !important;
+    color: #063A57 !important;
 }
 
 @media (min-width: 1380px) and (max-width: 1500px) {
