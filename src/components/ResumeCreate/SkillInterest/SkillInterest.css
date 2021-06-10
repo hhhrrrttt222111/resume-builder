@@ -58,17 +58,17 @@
 /* extra */
 .skillInterest button{
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif !important;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.25), 3px 3px 6px rgba(0, 0, 0, 0.55);
     margin-top: 2rem;
     padding: 0.6rem 2.0rem;
     text-transform: inherit;
     box-sizing: border-box;
-    
     left: 50%;
     transform: translateX(-50%);
     color: #ddf0ed;
     background: #1090D9;
-    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.55), 3px 3px 6px rgba(0, 0, 0, 0.55);
     border-radius: 40px;
 }
 

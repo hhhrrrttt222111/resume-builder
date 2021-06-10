@@ -19,7 +19,7 @@
 .demo-card{
     margin: 2rem;
     max-width: 400px;
-    height: 225px;
+    height: 250px;
     background: #efefef !important;
     box-shadow: 5px 5px 10px #000000dd, 10px 10px 20px #00000050, -5px -5px 10px #ffffffde, -10px -10px 20px #ffffff60 !important;
     transition: 0.8s ease !important;
@@ -84,7 +84,7 @@
     font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
-    margin-top: -8%;
+    margin-top: -5%;
     transition: 0.5s ease;
     font-family: 'Monteserrat', sans-serif;
     color: #383A48;
@@ -126,9 +126,6 @@
     .demo-grid{
         height: 80vh;
         position: static;
-    }
-    .demo-card {
-        height: 240px;
     }
 }
 
