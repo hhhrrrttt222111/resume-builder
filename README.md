@@ -62,13 +62,16 @@
 * Advanced customizations
 * Awards field
 
+<br><br><br><br>
+
+#### Found a bug? Create an issue.
+
 <br><br>
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 
 
 <br><br>
-
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
