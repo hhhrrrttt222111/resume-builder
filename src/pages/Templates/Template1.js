@@ -124,6 +124,7 @@ function Template1({ resume }) {
             padding: 40,
             paddingBottom: 3,
             paddingTop: 25,
+            marginLeft: 50,
             display: 'flex',
             flexDirection: 'row',
         },
