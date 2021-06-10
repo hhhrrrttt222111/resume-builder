@@ -41,12 +41,12 @@
     align-items: center;
     max-width: 400px;
     height: 450px;
-    font-family: 'Monteserrat', sans-serif;
 }
 .democard-content .cardTop{
     width: 100%;
     height: 50%;
     /* background: orange; */
+	margin-bottom: 5%;
 }
 .demoCardImg1, .demoCardImg2, .demoCardImg3{
     width: 100%;
@@ -78,23 +78,25 @@
     justify-content: center;
     align-items: center;  
     flex-direction: column;
+	
+    font-family: 'Nunito', sans-serif !important;
 }
 
 .democard-content h2{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
-    margin-top: -5%;
+    margin-top: -3%;
     transition: 0.5s ease;
-    font-family: 'Monteserrat', sans-serif;
-    color: #383A48;
+    font-family: 'Nunito', sans-serif !important;
+    color: #383A48b9;
     opacity: 0.8;
 }
 
 .demo-card:hover .cardTop h2{
     margin-top: 5%;
     opacity: 1;
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 .demo-card:hover .demoCardHead1{
@@ -111,9 +113,8 @@
     margin-bottom: 20px;
     text-align: center;
     width: 80%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
-
 
 
 
@@ -151,6 +152,31 @@
     }
 }
 
+@media (max-width: 540px){
+    .democard-content h2{
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: -3%;
+        transition: 0.5s ease;
+        font-family: 'Monteserrat', sans-serif;
+        color: #383A48bc;
+        opacity: 0.8;
+    }
+    
+    .demo-card:hover .cardTop h2{
+        margin-top: 6%;
+        opacity: 1;
+        font-size: 1.8rem;
+    }
+	
+	.cardBottom p{
+		font-size: 1.1rem;
+		margin-top: 5%;
+	}
+
+}
+
 @media (max-width: 400px){
     .democard-content .cardTop > div{
         background-size: 120%;
@@ -159,20 +185,8 @@
     .democard-content .cardTop > div:hover{
         margin-top: -12%;
     }
-    .democard-content h2{
-        font-size: 1.7rem;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 0%;
-        transition: 0.5s ease;
-        font-family: 'Monteserrat', sans-serif;
-        color: #383A48;
-        opacity: 0.8;
-    }
-    
-    .demo-card:hover .cardTop h2{
-        margin-top: 5%;
-        opacity: 1;
-        font-size: 2rem;
-    }
+	.cardBottom p{
+		font-size: 1.1rem;
+		margin-top: -12%;
+	}
 }

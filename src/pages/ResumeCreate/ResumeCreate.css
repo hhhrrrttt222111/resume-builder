@@ -196,10 +196,17 @@
 
 .popupDiv h3{
     font-family: 'Nunito', sans-serif !important;
-
+	font-size: 2rem;
+	margin-top: -5%;
+	margin-bottom: 5%;
+	text-align: center;
 }
 .popupDiv p{
     font-family: 'Nunito', sans-serif !important;
+	font-size: 1.1rem;
+	font-weight: 600;
+	width: 80%;
+	text-align: center;
 
 }
 
@@ -452,6 +459,9 @@
     .resumeSlider_Buttons button{
         transform: scale(0.95);
     }
+	.popupDiv button{
+		transform: scale(0.9);
+	}
 }
 @media screen and (max-width: 400px) {
     .resumeCreate_Body {
