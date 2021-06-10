@@ -79,14 +79,14 @@ function Template2({ resume }) {
             marginBottom: 15,
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center'
+            alignItems: 'flex-start'
         },
         eduHeading: {
             marginBottom: 5,
             marginTop: 15,
             fontSize: 15,
             textTransform: 'uppercase',
-            marginLeft: '-68px',
+            // marginLeft: '-28px',
             fontFamily: "'Alegreya Sans SC', sans-serif"
         },
         expHeading: {
@@ -94,7 +94,7 @@ function Template2({ resume }) {
             marginTop: 15,
             fontSize: 15,
             textTransform: 'uppercase',
-            marginLeft: '8px',
+            // marginLeft: '-25px',
             fontFamily: "'Alegreya Sans SC', sans-serif"
         },
         education: {
@@ -110,7 +110,7 @@ function Template2({ resume }) {
             fontFamily: "font-family: 'Ubuntu Mono', monospace"
         },
         eduRight: {
-            marginLeft: 20,
+            // marginLeft: 20,
         },
         eduRightTitle: {
             fontSize: '13px',
@@ -126,13 +126,13 @@ function Template2({ resume }) {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'flex-start',
-            justifyContent: 'flex-start'
+            justifyContent: 'flex-start',
         },
         skillsCont: {
             marginLeft: 72,
         },
         interestsCont: {
-            marginLeft: 243,
+            marginLeft: 198,
         },
         skillInterestHeading: {
             marginBottom: 10,
@@ -152,7 +152,7 @@ function Template2({ resume }) {
             paddingTop: 25,
             display: 'flex',
             flexDirection: 'row',
-            marginLeft: 20
+            marginLeft: 51
         },
         details: {
             display: 'flex',
@@ -161,7 +161,7 @@ function Template2({ resume }) {
         },
         address: {
             margin: 10,
-            marginLeft: 100,
+            marginLeft: 160,
             paddingRight: 20,
             width: '70%'
         },
