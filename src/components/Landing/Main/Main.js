@@ -17,7 +17,7 @@ function Main() {
   
     return (
         <div className="main">
-            <img src={logo} alt=""/>
+            <img src={logo} alt="Rzume"/>
             <div className="main-container">
                 <div className="main-description">
                     <h1>The ultimate tool for an exceptional resume.</h1>
@@ -25,7 +25,7 @@ function Main() {
                     <Button onClick={handleClick}>Create Resume</Button>
                 </div>
                 <div className="img-container">
-                    <img src={mainImg} alt=""/>
+                    <img src={mainImg} alt="Rzume"/>
                 </div>
             </div>  
                        

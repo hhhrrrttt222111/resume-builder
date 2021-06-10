@@ -29,7 +29,7 @@ function Features() {
                 </div>
                 <Fade right>
                     <div className="features-img">
-                        <img src = {featuresImg} alt=""/>
+                        <img src = {featuresImg} alt="Rzume"/>
                     </div>
                 </Fade>
             </div>
