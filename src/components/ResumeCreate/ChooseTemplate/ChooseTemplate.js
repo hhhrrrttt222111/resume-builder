@@ -16,7 +16,7 @@ const templates = [
     {
         id: 2,
         img: template2,
-        name: 'Dracarys'
+        name: 'Lumos'
     },
 ]
 

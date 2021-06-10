@@ -1,4 +1,4 @@
-import React, { useRef, useState, useContext } from 'react'
+import React, { useRef, useState, useContext, useEffect } from 'react'
 import { Button, Tooltip, Dialog, DialogContent, DialogContentText } from '@material-ui/core';
 import Zoom from '@material-ui/core/Zoom';
 import { useHistory } from 'react-router-dom';
@@ -28,6 +28,9 @@ function ResumeCreate() {
 
     const [slide, setSlide] = useState(1)
     const [open, setOpen] = useState(false);
+    const [counter, setCounter] = useState(7);
+    const [timer, setTimer] = useState(false);
+
 
     const handleClickOpen = () => {
       setOpen(true);
@@ -72,13 +75,28 @@ function ResumeCreate() {
     }
 
 
+
     const generatePDF = () => {
         handleClickOpen()
 
+        setTimer(true)
         setTimeout(() => {
 			history.push(`/template/${template}`)
-        }, 5000);
+        }, 8000);
+
     }
+
+    useEffect(() => {
+        if (timer) {
+            if (counter > 0) {
+                setTimeout(() => setCounter(counter - 1), 1000);
+            } else {
+                setCounter('0');
+            }
+        }
+
+    }, [counter, timer])
+
 
     const goToSlide = (sld) => {
         sliderRef.current.slickGoTo(sld);
@@ -185,7 +203,7 @@ function ResumeCreate() {
                         <DialogContent className="generate_popup">
                             <DialogContentText id="alert-dialog-description">
                                 <div className="popupDiv">
-                                    <h3>Generating PDF...</h3>
+                                    <h3>Generating PDF in {counter}...</h3>
 
                                     <img src="" alt="" />
 
