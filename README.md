@@ -4,8 +4,8 @@
 <img alt="resume builder" src="./src/assets/images/svg/logo_with_text.svg" width="250px" />
 </p>
 
-<h2 align="center">The ultimate tool for an exceptional resume.</h2>
-<p align="center">Create nothing but the best with us.</p>
+<h1 align="center">The ultimate tool for an exceptional resume.</h1>
+<h5 align="center">Create nothing but the best with us.</h5>
 
 <br><br>
 
