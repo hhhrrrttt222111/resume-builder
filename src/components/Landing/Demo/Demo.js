@@ -20,7 +20,7 @@ function Demo() {
                                     <h2 className="demoCardHead1">Choose your template. </h2>
                                 </div>
                                 <div className="cardBottom">
-                                    <p>Take your pick from our beautiful templates that are designed to impress. You can personalize it and give it your own unique touch.</p>
+                                    <p style={{marginTop: window.innerWidth > 400 ? "10%": "-5%"}}>Take your pick from our beautiful templates that are designed to impress. You can personalize it and give it your own unique touch.</p>
                                 </div>
                             </div>
                         </CardContent>

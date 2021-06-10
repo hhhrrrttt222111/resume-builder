@@ -76,7 +76,7 @@ function ResumeCreate() {
         handleClickOpen()
 
         setTimeout(() => {
-            history.push(`/template/${template}`)
+			history.push(`/template/${template}`)
         }, 5000);
     }
 
